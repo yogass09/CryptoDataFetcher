@@ -4,6 +4,12 @@ author: "yogesh sahu"
 date: "`r Sys.Date()`"
 output: html_document
 ---
+
+```{r}
+#changing or saving the data 
+setwd("C:/Users/44776/Documents/GitHub/CryptoDataFetcher/CryptoDataFetcher2.0/DATA")
+```
+
 ```{r}
 library(yfR)
 ```
@@ -14,5 +20,8 @@ CMCData<- yf_get(tickers = CMC$Ticker,
     last_date = Sys.Date() )
 
 ```
+
+```{r}
+CMCData
 ```
 

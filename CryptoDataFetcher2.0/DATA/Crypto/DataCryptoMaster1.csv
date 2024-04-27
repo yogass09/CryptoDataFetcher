@@ -1,0 +1,1001 @@
+"id","rank","name","symbol","slug","is_active","first_historical_data","last_historical_data"
+1,1,"Bitcoin","BTC","bitcoin",1,2010-07-13,2024-04-26
+1027,2,"Ethereum","ETH","ethereum",1,2015-08-07,2024-04-26
+825,3,"Tether USDt","USDT","tether",1,2015-02-25,2024-04-26
+1839,4,"BNB","BNB","bnb",1,2017-07-25,2024-04-26
+5426,5,"Solana","SOL","solana",1,2020-04-10,2024-04-26
+3408,6,"USDC","USDC","usd-coin",1,2018-10-08,2024-04-26
+52,7,"XRP","XRP","xrp",1,2013-08-04,2024-04-26
+74,8,"Dogecoin","DOGE","dogecoin",1,2013-12-15,2024-04-26
+11419,9,"Toncoin","TON","toncoin",1,2021-08-26,2024-04-26
+2010,10,"Cardano","ADA","cardano",1,2017-10-01,2024-04-26
+5994,11,"Shiba Inu","SHIB","shiba-inu",1,2020-08-01,2024-04-26
+5805,12,"Avalanche","AVAX","avalanche",1,2020-09-22,2024-04-26
+1958,13,"TRON","TRX","tron",1,2017-09-13,2024-04-26
+6636,14,"Polkadot","DOT","polkadot-new",1,2020-08-20,2024-04-26
+1831,15,"Bitcoin Cash","BCH","bitcoin-cash",1,2017-07-23,2024-04-26
+1975,16,"Chainlink","LINK","chainlink",1,2017-09-20,2024-04-26
+6535,17,"NEAR Protocol","NEAR","near-protocol",1,2020-10-13,2024-04-26
+3890,18,"Polygon","MATIC","polygon",1,2019-04-28,2024-04-26
+2,19,"Litecoin","LTC","litecoin",1,2013-04-28,2024-04-26
+8916,20,"Internet Computer","ICP","internet-computer",1,2021-05-10,2024-04-26
+3957,21,"UNUS SED LEO","LEO","unus-sed-leo",1,2019-05-21,2024-04-26
+4943,22,"Dai","DAI","multi-collateral-dai",1,2019-11-22,2024-04-26
+7083,23,"Uniswap","UNI","uniswap",1,2020-09-17,2024-04-26
+26081,24,"First Digital USD","FDUSD","first-digital-usd",1,2023-07-26,2024-04-26
+4642,25,"Hedera","HBAR","hedera",1,2019-09-17,2024-04-26
+1321,26,"Ethereum Classic","ETC","ethereum-classic",1,2016-07-24,2024-04-26
+4847,27,"Stacks","STX","stacks",1,2019-10-28,2024-04-26
+21794,28,"Aptos","APT","aptos",1,2022-10-19,2024-04-26
+27075,29,"Mantle","MNT","mantle",1,2023-07-17,2024-04-26
+3635,30,"Cronos","CRO","cronos",1,2018-12-14,2024-04-26
+2280,31,"Filecoin","FIL","filecoin",1,2017-12-13,2024-04-26
+512,32,"Stellar","XLM","stellar",1,2014-08-05,2024-04-26
+5690,33,"Render","RNDR","render",1,2020-06-11,2024-04-26
+3794,34,"Cosmos","ATOM","cosmos",1,2019-03-14,2024-04-26
+24478,35,"Pepe","PEPE","pepe",1,2023-04-17,2024-04-26
+3897,36,"OKB","OKB","okb",1,2019-04-30,2024-04-26
+10603,37,"Immutable","IMX","immutable-x",1,2021-11-05,2024-04-26
+28752,38,"dogwifhat","WIF","dogwifhat",1,2023-12-19,2024-04-26
+22974,39,"Bittensor","TAO","bittensor",1,2023-03-05,2024-04-26
+3077,40,"VeChain","VET","vechain",1,2018-08-03,2024-04-26
+11841,41,"Arbitrum","ARB","arbitrum",1,2023-03-23,2024-04-26
+20396,42,"Kaspa","KAS","kaspa",1,2022-06-01,2024-04-26
+1518,43,"Maker","MKR","maker",1,2017-01-29,2024-04-26
+6719,44,"The Graph","GRT","the-graph",1,2020-12-17,2024-04-26
+11840,45,"Optimism","OP","optimism-ethereum",1,2022-05-31,2024-04-26
+2416,46,"Theta Network","THETA","theta-network",1,2018-01-17,2024-04-26
+7226,47,"Injective","INJ","injective",1,2020-10-20,2024-04-26
+328,48,"Monero","XMR","monero",1,2014-05-21,2024-04-26
+5632,49,"Arweave","AR","arweave",1,2020-05-27,2024-04-26
+3513,50,"Fantom","FTM","fantom",1,2018-10-30,2024-04-26
+23254,51,"Core","CORE","core-dao",1,2023-02-08,2024-04-26
+3773,52,"Fetch.ai","FET","fetch",1,2019-03-02,2024-04-26
+22861,53,"Celestia","TIA","celestia",1,2023-10-31,2024-04-26
+4157,54,"THORChain","RUNE","thorchain",1,2019-07-23,2024-04-26
+10804,55,"FLOKI","FLOKI","floki-inu",1,2021-07-10,2024-04-26
+8000,56,"Lido DAO","LDO","lido-dao",1,2021-01-04,2024-04-26
+23095,57,"Bonk","BONK","bonk1",1,2022-12-30,2024-04-26
+23149,58,"Sei","SEI","sei",1,2023-08-15,2024-04-26
+11092,59,"Bitget Token","BGB","bitget-token-new",1,2021-07-29,2024-04-26
+4030,60,"Algorand","ALGO","algorand",1,2019-06-21,2024-04-26
+20947,61,"Sui","SUI","sui",1,2023-05-03,2024-04-26
+28298,62,"Beam","BEAM","onbeam",1,2023-10-27,2024-04-26
+7080,63,"Gala","GALA","gala",1,2020-09-17,2024-04-26
+4558,64,"Flow","FLOW","flow",1,2021-01-26,2024-04-26
+29210,65,"Jupiter","JUP","jupiter-ag",1,2024-01-31,2024-04-26
+7278,66,"Aave","AAVE","aave",1,2020-10-04,2024-04-26
+9481,67,"Pendle","PENDLE","pendle",1,2021-04-29,2024-04-26
+3155,68,"Quant","QNT","quant",1,2018-08-10,2024-04-26
+1376,69,"Neo","NEO","neo",1,2016-09-09,2024-04-26
+3602,70,"Bitcoin SV","BSV","bitcoin-sv",1,2018-11-09,2024-04-26
+16086,71,"BitTorrent (New)","BTT","bittorrent-new",1,2022-01-11,2024-04-26
+30171,72,"Ethena","ENA","ethena",1,2024-04-02,2024-04-26
+7950,73,"Flare","FLR","flare",1,2023-01-10,2024-04-26
+2424,74,"SingularityNET","AGIX","singularitynet",1,2018-01-19,2024-04-26
+6892,75,"MultiversX","EGLD","multiversx-egld",1,2020-09-04,2024-04-26
+21159,76,"Ondo","ONDO","ondo-finance",1,2024-01-18,2024-04-26
+7431,77,"Akash Network","AKT","akash-network",1,2020-10-19,2024-04-26
+29587,78,"Wormhole","W","wormhole",1,2024-04-03,2024-04-26
+4066,79,"Chiliz","CHZ","chiliz",1,2019-07-01,2024-04-26
+6783,80,"Axie Infinity","AXS","axie-infinity",1,2020-11-03,2024-04-26
+10791,81,"eCash","XEC","ecash",1,2021-07-08,2024-04-26
+6210,82,"The Sandbox","SAND","the-sandbox",1,2020-08-14,2024-04-26
+28324,83,"dYdX (Native)","DYDX","dydx-chain",1,2023-10-31,2024-04-26
+2011,84,"Tezos","XTZ","tezos",1,2017-10-02,2024-04-26
+7334,85,"Conflux","CFX","conflux-network",1,2020-11-10,2024-04-26
+2087,86,"KuCoin Token","KCS","kucoin-token",1,2017-10-24,2024-04-26
+2586,87,"Synthetix","SNX","synthetix",1,2018-03-14,2024-04-26
+13502,88,"Worldcoin","WLD","worldcoin-org",1,2023-07-24,2024-04-26
+8646,89,"Mina","MINA","mina",1,2021-06-01,2024-04-26
+14101,90,"Ronin","RON","ronin",1,2022-01-27,2024-04-26
+1765,91,"EOS","EOS","eos",1,2017-07-01,2024-04-26
+8425,92,"JasmyCoin","JASMY","jasmy",1,2021-02-11,2024-04-26
+25028,93,"ORDI","ORDI","ordi",1,2023-05-08,2024-04-26
+28177,94,"Pyth Network","PYTH","pyth-network",1,2023-11-20,2024-04-26
+1966,95,"Decentraland","MANA","decentraland",1,2017-09-17,2024-04-26
+22691,96,"Starknet","STRK","starknet-token",1,2024-02-20,2024-04-26
+1659,97,"Gnosis","GNO","gnosis-gno",1,2017-05-01,2024-04-26
+4948,98,"Nervos Network","CKB","nervos-network",1,2019-11-19,2024-04-26
+18876,99,"ApeCoin","APE","apecoin-ape",1,2022-03-17,2024-04-26
+3822,100,"Theta Fuel","TFUEL","theta-fuel",1,2019-03-28,2024-04-26
+4846,101,"Kava","KAVA","kava",1,2019-10-25,2024-04-26
+1720,102,"IOTA","IOTA","iota",1,2017-06-13,2024-04-26
+4269,103,"GateToken","GT","gatetoken",1,2019-08-26,2024-04-26
+19891,104,"USDD","USDD","usdd",1,2022-05-02,2024-04-26
+7186,105,"PancakeSwap","CAKE","pancakeswap",1,2020-09-28,2024-04-26
+9104,106,"AIOZ Network","AIOZ","aioz-network",1,2021-04-02,2024-04-26
+4256,107,"Klaytn","KLAY","klaytn",1,2020-03-30,2024-04-26
+2694,108,"Nexo","NEXO","nexo",1,2018-05-01,2024-04-26
+5665,109,"Helium","HNT","helium",1,2020-06-08,2024-04-26
+17799,110,"Axelar","AXL","axelar",1,2022-09-27,2024-04-26
+7653,111,"Oasis Network","ROSE","oasis-network",1,2020-11-18,2024-04-26
+23711,112,"Echelon Prime","PRIME","echelon-prime",1,2023-03-01,2024-04-26
+4172,113,"Terra Classic","LUNC","terra-luna",1,2019-07-26,2024-04-26
+28683,114,"SATS","1000SATS","sats",1,2023-12-12,2024-04-26
+12220,115,"Osmosis","OSMO","osmosis",1,2021-10-04,2024-04-26
+23121,116,"Blur","BLUR","blur-token",1,2023-02-13,2024-04-26
+11156,117,"dYdX (ethDYDX)","ETHDYDX","dydx-ethdydx",1,2021-09-08,2024-04-26
+7548,118,"WEMIX","WEMIX","wemix",1,2020-10-28,2024-04-26
+2083,119,"Bitcoin Gold","BTG","bitcoin-gold",1,2017-10-23,2024-04-26
+12885,120,"Astar","ASTR","astar",1,2022-01-18,2024-04-26
+7501,121,"WOO","WOO","wootrade",1,2020-10-28,2024-04-26
+29870,122,"BOOK OF MEME","BOME","book-of-meme",1,2024-03-14,2024-04-26
+12387,123,"Ribbon Finance","RBN","ribbon-finance",1,2021-10-07,2024-04-26
+2777,124,"IoTeX","IOTX","iotex",1,2018-05-25,2024-04-26
+5176,125,"Tether Gold","XAUt","tether-gold",1,2020-02-07,2024-04-26
+6536,126,"MANTRA","OM","mantra",1,2020-08-18,2024-04-26
+2634,127,"XDC Network","XDC","xdc-network",1,2018-04-13,2024-04-26
+11948,128,"Radix","XRD","radix-protocol",1,2021-09-17,2024-04-26
+3911,129,"Ocean Protocol","OCEAN","ocean-protocol",1,2019-05-06,2024-04-26
+6538,130,"Curve DAO Token","CRV","curve-dao-token",1,2020-08-14,2024-04-26
+3783,131,"Ankr","ANKR","ankr",1,2019-03-06,2024-04-26
+30126,132,"cat in a dogs world","MEW","mew",1,2024-03-26,2024-04-26
+28932,133,"Dymension","DYM","dymension",1,2024-01-29,2024-04-26
+2563,134,"TrueUSD","TUSD","trueusd",1,2018-03-06,2024-04-26
+8104,135,"1inch Network","1INCH","1inch",1,2020-12-24,2024-04-26
+4195,136,"FTX Token","FTT","ftx-token",1,2019-07-31,2024-04-26
+5691,137,"SKALE","SKL","skale-network",1,2020-11-29,2024-04-26
+4041,138,"MX TOKEN","MX","mx-token",1,2019-09-24,2024-04-26
+9816,139,"APENFT","NFT","apenft",1,2021-05-21,2024-04-26
+18069,140,"GMT","GMT","green-metaverse-token",1,2022-03-09,2024-04-26
+8290,141,"SuperVerse","SUPER","superfarm",1,2021-02-22,2024-04-26
+3640,142,"Livepeer","LPT","livepeer",1,2018-12-19,2024-04-26
+2130,143,"Enjin Coin","ENJ","enjin-coin",1,2017-11-01,2024-04-26
+7326,144,"DeXe","DEXE","dexe",1,2020-10-06,2024-04-26
+2577,145,"Ravencoin","RVN","ravencoin",1,2018-03-10,2024-04-26
+13855,146,"Ethereum Name Service","ENS","ethereum-name-service",1,2021-11-09,2024-04-26
+20314,147,"Terra","LUNA","terra-luna-v2",1,2022-05-28,2024-04-26
+5692,148,"Compound","COMP","compound",1,2020-06-16,2024-04-26
+11877,149,"Galxe","GAL","galxe",1,2022-05-05,2024-04-26
+12999,150,"ssv.network","SSV","ssv-network",1,2021-10-22,2024-04-26
+5964,151,"Trust Wallet Token","TWT","trust-wallet-token",1,2020-07-30,2024-04-26
+13631,152,"Manta Network","MANTA","manta-network",1,2024-01-18,2024-04-26
+2469,153,"Zilliqa","ZIL","zilliqa",1,2018-01-25,2024-04-26
+2682,154,"Holo","HOT","holo",1,2018-04-30,2024-04-26
+5567,155,"Celo","CELO","celo",1,2020-05-22,2024-04-26
+27565,156,"Arkham","ARKM","arkham",1,2023-07-18,2024-04-26
+1896,157,"0x Protocol","ZRX","0x",1,2017-08-16,2024-04-26
+2943,158,"Rocket Pool","RPL","rocket-pool",1,2018-07-18,2024-04-26
+2299,159,"aelf","ELF","aelf",1,2017-12-21,2024-04-26
+4705,160,"PAX Gold","PAXG","pax-gold",1,2019-09-26,2024-04-26
+8526,161,"Raydium","RAY","raydium",1,2021-02-21,2024-04-26
+1042,162,"Siacoin","SC","siacoin",1,2015-08-26,2024-04-26
+1684,163,"Qtum","QTUM","qtum",1,2017-05-24,2024-04-26
+29073,164,"Altlayer","ALT","altlayer",1,2024-01-25,2024-04-26
+21296,165,"EthereumPoW","ETHW","ethereum-pow",1,2022-08-08,2024-04-26
+29814,166,"ether.fi","ETHFI","ether-fi-ethfi",1,2024-03-18,2024-04-26
+21846,167,"SPACE ID","ID","space-id",1,2023-03-22,2024-04-26
+1455,168,"Golem","GLM","golem-network-tokens",1,2016-11-18,2024-04-26
+28541,169,"Jito","JTO","jito",1,2023-12-07,2024-04-26
+1697,170,"Basic Attention Token","BAT","basic-attention-token",1,2017-06-01,2024-04-26
+8119,171,"SafePal","SFP","safepal",1,2021-02-08,2024-04-26
+2467,172,"OriginTrail","TRAC","origintrail",1,2018-01-25,2024-04-26
+1437,173,"Zcash","ZEC","zcash",1,2016-10-29,2024-04-26
+5899,174,"Casper","CSPR","casper",1,2021-05-11,2024-04-26
+1785,175,"Gas","GAS","gas",1,2017-07-06,2024-04-26
+8719,176,"Illuvium","ILV","illuvium",1,2021-03-31,2024-04-26
+1934,177,"Loopring","LRC","loopring",1,2017-08-30,2024-04-26
+131,178,"Dash","DASH","dash",1,2014-02-14,2024-04-26
+9640,179,"Metis","METIS","metisdao",1,2021-05-13,2024-04-26
+9543,180,"Biconomy","BICO","biconomy",1,2021-12-01,2024-04-26
+6953,181,"Frax Share","FXS","frax-share",1,2020-12-26,2024-04-26
+23635,182,"BinaryX","BNX","binaryx-new",1,2023-02-23,2024-04-26
+28301,183,"Memecoin","MEME","meme",1,2023-11-03,2024-04-26
+1680,184,"Aragon","ANT","aragon",1,2017-05-18,2024-04-26
+1168,185,"Decred","DCR","decred",1,2016-02-10,2024-04-26
+873,186,"NEM","XEM","nem",1,2015-04-01,2024-04-26
+29335,187,"Pixels","PIXEL","pixels",1,2024-02-19,2024-04-26
+30372,188,"Saga","SAGA","saga",1,2024-04-09,2024-04-26
+20362,189,"Polymesh","POLYX","polymesh",1,2022-05-30,2024-04-26
+6748,190,"Centrifuge","CFG","centrifuge",1,2021-07-14,2024-04-26
+17751,191,"Threshold","T","threshold",1,2022-02-10,2024-04-26
+5488,192,"JUST","JST","just",1,2020-05-07,2024-04-26
+8536,193,"Mask Network","MASK","mask-network",1,2021-02-23,2024-04-26
+2566,194,"Ontology","ONT","ontology",1,2018-03-08,2024-04-26
+10688,195,"Yield Guild Games","YGG","yield-guild-games",1,2021-07-28,2024-04-26
+3029,196,"Flux","FLUX","zel",1,2018-08-02,2024-04-26
+6945,197,"Amp","AMP","amp",1,2020-09-11,2024-04-26
+3964,198,"Reserve Rights","RSR","reserve-rights",1,2019-05-24,2024-04-26
+9258,199,"Chia","XCH","chia-network",1,2021-05-03,2024-04-26
+10407,200,"Baby Doge Coin","BabyDoge","baby-doge-coin",1,2021-06-11,2024-04-26
+8085,201,"Lido Staked ETH","stETH","steth",1,2020-12-23,2024-04-26
+18579,202,"Wrapped TRON","WTRX","wrapped-tron",1,2022-03-05,2024-04-26
+3717,203,"Wrapped Bitcoin","WBTC","wrapped-bitcoin",1,2019-01-30,2024-04-26
+24399,204,"Wrapped HBAR","WHBAR","wrapped-hedera",1,2023-05-04,2024-04-26
+4023,205,"Bitcoin BEP2","BTCB","bitcoin-bep2",1,2019-06-18,2024-04-26
+29520,206,"Renzo Restaked ETH","EZETH","renzo-restaked-eth",1,2024-02-23,2024-04-26
+24760,207,"Wrapped Beacon ETH","WBETH","wrapped-beacon-eth",1,2023-04-27,2024-04-26
+28695,208,"Wrapped eETH","weETH","wrapped-eeth",1,2023-12-13,2024-04-26
+29470,209,"Ethena USDe","USDe","ethena-usde",1,2024-02-20,2024-04-26
+15060,210,"Rocket Pool ETH","RETH","rocket-pool-eth",1,2021-11-23,2024-04-26
+27765,211,"Zeebu","ZBU","zeebu",1,2023-08-09,2024-04-26
+7961,212,"Venus BNB","vBNB","venus-bnb",1,2023-11-09,2024-04-26
+7192,213,"Wrapped BNB","WBNB","wbnb",1,2020-09-28,2024-04-26
+11461,214,"Marinade Staked SOL","MSOL","marinade",1,2021-10-12,2024-04-26
+23054,215,"Cheelee","CHEEL","cheelee",1,2023-02-13,2024-04-26
+21535,216,"Coinbase Wrapped Staked ETH","cbETH","coinbase-wrapped-staked-eth",1,2022-08-24,2024-04-26
+6952,217,"Frax","FRAX","frax",1,2020-12-26,2024-04-26
+29270,218,"Aerodrome Finance","AERO","aerodrome-finance",1,2024-02-02,2024-04-26
+22615,219,"Fasttoken","FTN","fasttoken",1,2023-01-20,2024-04-26
+28782,220,"Popcat (SOL)","POPCAT","popcat-sol",1,2023-12-20,2024-04-26
+17520,221,"Orbler","ORBR","orbler",1,2022-03-01,2024-04-26
+15271,222,"Rollbit Coin","RLB","rollbit-coin",1,2022-03-23,2024-04-26
+29743,223,"Brett","BRETT","based-brett",1,2024-03-11,2024-04-26
+30096,224,"Degen","DEGEN","degen-base",1,2024-03-25,2024-04-26
+22059,225,"Venom","VENOM","venom",1,2024-03-25,2024-04-26
+24165,226,"Wrapped Kava","WKAVA","wrapped-kava",1,2023-03-30,2024-04-26
+29599,227,"USDB","USDB","usdb",1,2024-03-01,2024-04-26
+5015,228,"HEX","HEX","hex",1,2019-12-17,2024-04-26
+21259,229,"ZetaChain","ZETA","zetachain",1,2024-02-01,2024-04-26
+15585,230,"GuildFi","GF","guildfi",1,2021-12-05,2024-04-26
+27772,231,"PayPal USD","PYUSD","paypal-usd",1,2023-08-20,2024-04-26
+1974,232,"Propy","PRO","propy",1,2017-09-19,2024-04-26
+3945,233,"Harmony","ONE","harmony",1,2019-06-01,2024-04-26
+6958,234,"Alchemy Pay","ACH","alchemy-pay",1,2020-09-09,2024-04-26
+30484,235,"PUPS (Ordinals)","PUPS","pups-ordinals",1,2024-04-09,2024-04-26
+6836,236,"Moonbeam","GLMR","moonbeam",1,2022-01-11,2024-04-26
+1274,237,"Waves","WAVES","waves",1,2016-06-02,2024-04-26
+6941,238,"Huobi BTC","HBTC","huobi-btc",1,2020-09-09,2024-04-26
+3012,239,"VeThor Token","VTHO","vethor-token",1,2018-07-30,2024-04-26
+2394,240,"Telcoin","TEL","telcoin",1,2018-01-15,2024-04-26
+3978,241,"Chromia","CHR","chromia",1,2019-05-28,2024-04-26
+27178,242,"PAAL AI","PAAL","paal-ai",1,2023-06-23,2024-04-26
+11857,243,"GMX","GMX","gmx",1,2021-09-13,2024-04-26
+28367,244,"IPVERSE","IPV","ipverse-eth",1,2023-11-07,2024-04-26
+11823,245,"Pocket Network","POKT","pocket-network",1,2022-01-13,2024-04-26
+5034,246,"Kusama","KSM","kusama",1,2019-12-12,2024-04-26
+27659,247,"MOG Coin","MOG","mog-coin",1,2023-07-21,2024-04-26
+5647,248,"Kadena","KDA","kadena",1,2020-05-31,2024-04-26
+9903,249,"Convex Finance","CVX","convex-finance",1,2021-05-18,2024-04-26
+15185,250,"Kujira","KUJI","kujira",1,2021-11-29,2024-04-26
+6758,251,"SushiSwap","SUSHI","sushiswap",1,2020-08-28,2024-04-26
+2099,252,"ICON","ICX","icon",1,2017-10-27,2024-04-26
+9025,253,"Tribe","TRIBE","tribe",1,2021-04-03,2024-04-26
+10442,254,"Decentralized Social","DESO","deso",1,2021-06-16,2024-04-26
+2300,255,"WAX","WAXP","wax",1,2017-12-21,2024-04-26
+3987,256,"Beldex","BDX","beldex",1,2019-06-07,2024-04-26
+3217,257,"Ontology Gas","ONG","ontology-gas",1,2018-08-23,2024-04-26
+5864,258,"yearn.finance","YFI","yearn-finance",1,2020-07-20,2024-04-26
+5198,259,"Creditcoin","CTC","creditcoin",1,2020-01-31,2024-04-26
+27872,260,"MAGA","TRUMP","maga",1,2023-08-18,2024-04-26
+1214,261,"Lisk","LSK","lisk",1,2016-04-06,2024-04-26
+1772,262,"Storj","STORJ","storj",1,2017-07-02,2024-04-26
+7455,263,"Audius","AUDIO","audius",1,2020-10-22,2024-04-26
+4950,264,"LCX","LCX","lcx",1,2019-12-03,2024-04-26
+5617,265,"UMA","UMA","uma",1,2020-05-25,2024-04-26
+2545,266,"Arcblock","ABT","arcblock",1,2018-02-26,2024-04-26
+10903,267,"Coin98","C98","coin98",1,2021-07-23,2024-04-26
+29920,268,"SLERF","SLERF","slerf",1,2024-03-18,2024-04-26
+30315,269,"Omni Network","OMNI","omni-network",1,2024-04-17,2024-04-26
+23355,270,"0x0.ai","0x0","0x0-ai-ai-smart-contract",1,2023-01-31,2024-04-26
+4679,271,"Band Protocol","BAND","band-protocol",1,2019-09-18,2024-04-26
+8037,272,"Vanar Chain","VANRY","vanar",1,2020-12-16,2024-04-26
+9674,273,"Wilder World","WILD","wilder-world",1,2021-05-11,2024-04-26
+5728,274,"Balancer","BAL","balancer",1,2020-06-24,2024-04-26
+26680,275,"Neutron","NTRN","neutron-ntrn",1,2023-06-13,2024-04-26
+4279,276,"Solar","SXP","sxp",1,2019-08-26,2024-04-26
+4512,277,"FINSCHIA","FNSA","finschia",1,2020-03-05,2024-04-26
+7737,278,"API3","API3","api3",1,2020-11-29,2024-04-26
+11976,279,"Aleph Zero","AZERO","aleph-zero",1,2022-01-27,2024-04-26
+2405,280,"IOST","IOST","iostoken",1,2018-01-16,2024-04-26
+3814,281,"Celer Network","CELR","celer-network",1,2019-03-25,2024-04-26
+14783,282,"Treasure","MAGIC","magic-token",1,2021-11-18,2024-04-26
+1637,283,"iExec RLC","RLC","rlc",1,2017-04-20,2024-04-26
+28933,284,"Xai","XAI","xai-games",1,2024-01-09,2024-04-26
+23757,285,"ATOR Protocol","ATOR","airtor-protocol",1,2023-03-04,2024-04-26
+109,286,"DigiByte","DGB","digibyte",1,2014-02-06,2024-04-26
+22074,287,"ALEX Lab","ALEX","alex-lab",1,2022-10-11,2024-04-26
+17917,288,"RSS3","RSS3","rss3",1,2022-02-13,2024-04-26
+24007,289,"Delysium","AGI","delysium",1,2023-04-11,2024-04-26
+11396,290,"JOE","JOE","joe",1,2021-08-27,2024-04-26
+9040,291,"Pundi X (New)","PUNDIX","pundix-new",1,2021-04-04,2024-04-26
+3992,292,"COTI","COTI","coti",1,2019-06-04,2024-04-26
+3701,293,"Rootstock Infrastructure Framework","RIF","rsk-infrastructure-framework",1,2019-01-16,2024-04-26
+21781,294,"Stride","STRD","stride",1,2022-12-07,2024-04-26
+11584,295,"Braintrust","BTRST","braintrust",1,2021-09-15,2024-04-26
+12147,296,"Synapse","SYN","synapse-2",1,2021-09-26,2024-04-26
+4120,297,"Prom","PROM","prom",1,2019-07-17,2024-04-26
+14519,298,"VVS Finance","VVS","vvs-finance",1,2021-11-22,2024-04-26
+11232,299,"Highstreet","HIGH","highstreet",1,2021-10-14,2024-04-26
+2499,300,"SwissBorg","BORG","swissborg",1,2018-02-03,2024-04-26
+24781,301,"CyberConnect","CYBER","cyberconnect",1,2023-08-15,2024-04-26
+14878,302,"Alephium","ALPH","alephium",1,2022-01-12,2024-04-26
+28675,303,"Coq Inu","COQ","coq-inu",1,2023-12-11,2024-04-26
+3626,304,"Rootstock Smart Bitcoin","RBTC","rsk-smart-bitcoin",1,2018-12-05,2024-04-26
+24600,305,"Helium Mobile","MOBILE","helium-mobile",1,2023-04-21,2024-04-26
+541,306,"Syscoin","SYS","syscoin",1,2014-08-20,2024-04-26
+5031,307,"MimbleWimbleCoin","MWC","mimblewimblecoin",1,2020-02-23,2024-04-26
+7497,308,"Marlin","POND","marlin",1,2020-12-20,2024-04-26
+5190,309,"FLEX","FLEX","flex",1,2020-02-24,2024-04-26
+30168,310,"Stratis [New]","STRAX","stratis-new",1,2024-03-28,2024-04-26
+24613,311,"Open Campus","EDU","open-campus",1,2023-04-28,2024-04-26
+5446,312,"USDJ","USDJ","usdj",1,2020-04-14,2024-04-26
+1816,313,"Civic","CVC","civic",1,2017-07-17,2024-04-26
+30008,314,"Apu Apustaja","APU","apu-apustaja",1,2024-03-20,2024-04-26
+5824,315,"Smooth Love Potion","SLP","smooth-love-potion",1,2020-07-08,2024-04-26
+28230,316,"Big Time","BIGTIME","big-time",1,2023-10-11,2024-04-26
+7129,317,"TerraClassicUSD","USTC","terrausd",1,2020-11-24,2024-04-26
+2165,318,"ERC20","ERC20","erc20",1,2017-11-10,2024-04-26
+5370,319,"Hive","HIVE","hive-blockchain",1,2020-03-26,2024-04-26
+8972,320,"Seedify.fund","SFUND","seedify-fund",1,2021-03-29,2024-04-26
+30712,321,"Merlin Chain","MERL","merlin-chain",1,2024-04-19,2024-04-26
+13769,322,"World Mobile Token","WMT","world-mobile-token",1,2021-12-23,2024-04-26
+7288,323,"Venus","XVS","venus",1,2020-10-05,2024-04-26
+3801,324,"BORA","BORA","bora",1,2019-03-18,2024-04-26
+2930,325,"IQ","IQ","iq",1,2018-07-13,2024-04-26
+1732,326,"Numeraire","NMR","numeraire",1,2017-06-23,2024-04-26
+29676,327,"Aevo","AEVO","aevo",1,2024-03-13,2024-04-26
+9263,328,"Unizen","ZCX","unizen",1,2021-04-16,2024-04-26
+29555,329,"Portal","PORTAL","portal-gaming",1,2024-02-29,2024-04-26
+19091,330,"H2O DAO","H2O","h2o-dao",1,2022-03-26,2024-04-26
+1759,331,"Status","SNT","status",1,2017-06-28,2024-04-26
+24225,332,"MetFi","METFI","metfi2",1,2023-04-05,2024-04-26
+28382,333,"Myro","MYRO","myro",1,2023-11-11,2024-04-26
+5566,334,"Keep Network","KEEP","keep-network",1,2020-05-13,2024-04-26
+12749,335,"Nakamoto Games","NAKA","nakamoto-games",1,2021-10-15,2024-04-26
+5444,336,"Cartesi","CTSI","cartesi",1,2020-04-23,2024-04-26
+4944,337,"Tellor","TRB","tellor",1,2019-11-19,2024-04-26
+1567,338,"Nano","XNO","nano",1,2017-03-07,2024-04-26
+2132,339,"Powerledger","POWR","power-ledger",1,2017-11-01,2024-04-26
+27750,340,"Toshi","TOSHI","toshithecat",1,2023-08-04,2024-04-26
+2505,341,"Bluzelle","BLZ","bluzelle",1,2018-02-06,2024-04-26
+10529,342,"Sun (New)","SUN","sun-token",1,2021-06-21,2024-04-26
+7127,343,"Velo","VELO","velo",1,2020-09-22,2024-04-26
+29175,344,"Wen","WEN","wen",1,2024-01-26,2024-04-26
+1586,345,"Ark","ARK","ark",1,2017-03-22,2024-04-26
+8420,346,"DAO Maker","DAO","dao-maker",1,2021-02-09,2024-04-26
+30636,347,"Zebec Network","ZBCN","zebec-network",1,2024-04-15,2024-04-26
+5113,348,"inSure DeFi","SURE","insure",1,2020-01-07,2024-04-26
+9260,349,"Zignaly","ZIG","zigcoin",1,2021-04-16,2024-04-26
+4092,350,"Dusk","DUSK","dusk",1,2019-07-11,2024-04-26
+11865,351,"Bone ShibaSwap","BONE","bone-shibaswap",1,2021-09-13,2024-04-26
+28846,352,"Sleepless AI","AI","sleepless-ai",1,2024-01-04,2024-04-26
+25023,353,"Milady Meme Coin","LADYS","milady-meme-coin",1,2023-05-08,2024-04-26
+10180,354,"Gomining","GMT","gomining-token",1,2021-06-01,2024-04-26
+2982,355,"MVL","MVL","mvl",1,2018-07-27,2024-04-26
+4660,356,"Telos","TLOS","telos",1,2019-09-19,2024-04-26
+24927,357,"crvUSD","CRVUSD","crvusd",1,2023-06-28,2024-04-26
+4036,358,"Contentos","COS","contentos",1,2019-06-20,2024-04-26
+1230,359,"Steem","STEEM","steem",1,2016-04-18,2024-04-26
+3330,360,"Pax Dollar","USDP","paxos-standard",1,2018-09-27,2024-04-26
+28047,361,"L7","LSD","l7-dex",1,2023-09-19,2024-04-26
+7533,362,"Oraichain","ORAI","oraichain-token",1,2020-10-27,2024-04-26
+22850,363,"Hivemapper","HONEY","hivemapper",1,2022-12-04,2024-04-26
+14806,364,"ConstitutionDAO","PEOPLE","constitutiondao",1,2021-11-19,2024-04-26
+6841,365,"Phala Network","PHA","phala-network",1,2020-09-13,2024-04-26
+11165,366,"Orca","ORCA","orca",1,2021-08-10,2024-04-26
+21178,367,"Metars Genesis","MRS","metars-genesis",1,2022-08-01,2024-04-26
+2989,368,"STASIS EURO","EURS","stasis-euro",1,2018-07-30,2024-04-26
+1886,369,"Dent","DENT","dent",1,2017-08-12,2024-04-26
+7411,370,"Covalent","CQT","covalent",1,2021-06-23,2024-04-26
+2071,371,"Request","REQ","request",1,2017-10-20,2024-04-26
+8677,372,"Symbol","XYM","symbol",1,2021-03-19,2024-04-26
+1698,373,"Horizen","ZEN","horizen",1,2017-06-01,2024-04-26
+22265,374,"Oasys","OAS","oasys",1,2022-12-12,2024-04-26
+21473,375,"Dione Protocol","DIONE","dione-protocol",1,2022-08-22,2024-04-26
+22764,376,"Hooked Protocol","HOOK","hooked-protocol",1,2022-12-01,2024-04-26
+30491,377,"Bitcoin Wizards","WZRD","bitcoin-wizards",1,2024-04-10,2024-04-26
+10630,378,"Guild of Guardians","GOG","guild-of-guardians",1,2021-12-22,2024-04-26
+30369,379,"HashAI","HASHAI","hashai",1,2024-04-04,2024-04-26
+9308,380,"Vulcan Forged (PYR)","PYR","vulcan-forged-pyr",1,2021-04-19,2024-04-26
+28674,381,"Fusionist","ACE","fusionist",1,2023-12-18,2024-04-26
+28412,382,"Multibit","MUBI","multibit",1,2023-11-14,2024-04-26
+17591,383,"NYM","NYM","nym",1,2022-04-15,2024-04-26
+7725,384,"TrueFi","TRU","truefi-token",1,2020-11-21,2024-04-26
+22289,385,"Myria","MYRIA","myria",1,2023-04-07,2024-04-26
+4191,386,"Synternet","NOIA","syntropy",1,2019-07-31,2024-04-26
+24203,387,"SmarDex","SDEX","smardex",1,2023-04-03,2024-04-26
+29709,388,"Entangle","NGL","entangle",1,2024-03-14,2024-04-26
+30449,389,"Tensor","TNSR","tensor",1,2024-04-08,2024-04-26
+4206,390,"WINkLink","WIN","wink",1,2019-08-01,2024-04-26
+29513,391,"Node AI","GPU","node-ai",1,2024-02-23,2024-04-26
+5908,392,"dKargo","DKA","dkargo",1,2020-07-27,2024-04-26
+14803,393,"Aurora","AURORA","aurora-near",1,2021-11-19,2024-04-26
+19843,394,"ApeX Protocol","APEX","apex-token",1,2022-04-28,2024-04-26
+8669,395,"Sovryn","SOV","sovryn",1,2021-06-17,2024-04-26
+22461,396,"Hashflow","HFT","hashflow",1,2022-11-07,2024-04-26
+9285,397,"Moonriver","MOVR","moonriver",1,2021-08-27,2024-04-26
+5266,398,"MiL.k","MLK","milk-alliance",1,2020-08-05,2024-04-26
+3835,399,"Orbs","ORBS","orbs",1,2019-04-03,2024-04-26
+28778,400,"NFPrompt","NFP","nfprompt",1,2023-12-27,2024-04-26
+20622,401,"Forta","FORT","forta",1,2022-06-15,2024-04-26
+2868,402,"Constellation","DAG","constellation",1,2018-06-20,2024-04-26
+13663,403,"Gains Network","GNS","gains-network",1,2021-11-01,2024-04-26
+27622,404,"LUKSO","LYX","lukso-network",1,2023-07-24,2024-04-26
+18736,405,"Blockchain Foundation for Innovation & Collaboration","BFIC","best-fintech-investment-coin",1,2022-03-14,2024-04-26
+1788,406,"Metal DAO","MTL","metal",1,2017-07-09,2024-04-26
+5604,407,"Secret","SCRT","secret",1,2020-09-29,2024-04-26
+28299,408,"TokenFi","TOKEN","tokenfi",1,2023-10-27,2024-04-26
+9444,409,"Kyber Network Crystal v2","KNC","kyber-network-crystal-v2",1,2021-07-28,2024-04-26
+20873,410,"LeverFi","LEVER","lever",1,2022-07-13,2024-04-26
+9175,411,"MOBOX","MBOX","mobox",1,2021-04-08,2024-04-26
+19055,412,"Solidus Ai Tech","AITECH","solidus-ai-tech",1,2023-09-01,2024-04-26
+6731,413,"Tokamak Network","TON","tokamak-network",1,2020-08-29,2024-04-26
+7224,414,"DODO","DODO","dodo",1,2020-09-29,2024-04-26
+28321,415,"Polygon Ecosystem Token","POL","polygon-ecosystem-token",1,2023-10-30,2024-04-26
+9566,416,"Liquity USD","LUSD","liquity-usd",1,2021-05-04,2024-04-26
+8602,417,"Bounce Token","AUCTION","bounce-token",1,2021-02-26,2024-04-26
+28829,418,"Heroes of Mavia","MAVIA","heroes-of-mavia",1,2024-02-06,2024-04-26
+4006,419,"STP","STPT","standard-tokenization-protocol",1,2019-06-12,2024-04-26
+2303,420,"MediBloc","MED","medibloc",1,2017-12-22,2024-04-26
+9436,421,"Dogelon Mars","ELON","dogelon",1,2021-04-23,2024-04-26
+18934,422,"Stargate Finance","STG","stargate-finance",1,2022-03-18,2024-04-26
+20435,423,"Velodrome Finance","VELO","velodrome-finance",1,2022-06-02,2024-04-26
+2765,424,"XYO","XYO","xyo",1,2018-05-22,2024-04-26
+14822,425,"Victoria VR","VR","victoria-vr",1,2021-12-02,2024-04-26
+23756,426,"ChainGPT","CGPT","chaingpt",1,2023-04-10,2024-04-26
+8258,427,"CUDOS","CUDOS","cudos",1,2021-01-13,2024-04-26
+8100,428,"Ankr Staked ETH","ankrETH","ankreth",1,2020-12-23,2024-04-26
+1762,429,"Ergo","ERG","ergo",1,2017-06-29,2024-04-26
+1320,430,"Ardor","ARDR","ardor",1,2016-07-23,2024-04-26
+6756,431,"Acala Token","ACA","acala",1,2022-01-25,2024-04-26
+5026,432,"Orchid","OXT","orchid",1,2019-12-17,2024-04-26
+23825,433,"Nexera","NXRA","allianceblock-nexera",1,2023-03-08,2024-04-26
+7429,434,"Liquity","LQTY","liquity",1,2021-04-07,2024-04-26
+4956,435,"MAP Protocol","MAPO","map-protocol",1,2020-01-06,2024-04-26
+2588,436,"Loom Network","LOOM","loom-network",1,2018-03-14,2024-04-26
+7232,437,"Stella","ALPHA","alpha-finance-lab",1,2020-10-09,2024-04-26
+10188,438,"Automata Network","ATA","automata-network",1,2021-06-07,2024-04-26
+28076,439,"Ozone Chain","OZO","ozone-chain",1,2023-09-25,2024-04-26
+8083,440,"Tokenlon Network Token","LON","tokenlon-network-token",1,2020-12-23,2024-04-26
+21106,441,"Radiant Capital","RDNT","radiant-capital",1,2022-07-26,2024-04-26
+17081,442,"LooksRare","LOOKS","looksrare",1,2022-01-10,2024-04-26
+25714,443,"Crown by Third Time Games","CROWN","crown-by-third-time-games",1,2023-05-23,2024-04-26
+18037,444,"Maverick Protocol","MAV","maverick-protocol",1,2023-06-28,2024-04-26
+8936,445,"Trias Token (New)","TRIAS","trias-token",1,2021-04-05,2024-04-26
+23037,446,"Hifi Finance","HIFI","hifi-finance-new",1,2023-01-30,2024-04-26
+11289,447,"Spell Token","SPELL","spell-token",1,2021-08-17,2024-04-26
+8615,448,"Ethernity","ERN","ethernity-chain",1,2021-03-08,2024-04-26
+3306,449,"Gemini Dollar","GUSD","gemini-dollar",1,2018-10-06,2024-04-26
+13967,450,"Goldfinch","GFI","goldfinch-protocol",1,2022-01-11,2024-04-26
+2502,451,"Huobi Token","HT","htx-token",1,2018-02-03,2024-04-26
+18895,452,"MARBLEX","MBX","marblex",1,2022-03-23,2024-04-26
+4807,453,"Shentu","CTK","shentu",1,2020-10-21,2024-04-26
+7046,454,"Aavegotchi","GHST","aavegotchi",1,2020-09-15,2024-04-26
+21964,455,"Tectum","TET","tectum",1,2023-07-03,2024-04-26
+2780,456,"NKN","NKN","nkn",1,2018-05-28,2024-04-26
+1808,457,"OMG Network","OMG","omg",1,2017-07-14,2024-04-26
+693,458,"Verge","XVG","verge",1,2014-10-25,2024-04-26
+29779,459,"Polyhedra Network","ZK","polyhedra-network",1,2024-03-19,2024-04-26
+1727,460,"Bancor","BNT","bancor",1,2017-06-18,2024-04-26
+6843,461,"Radworks","RAD","radworks",1,2021-02-27,2024-04-26
+25220,462,"HarryPotterObamaSonic10Inu (ERC-20)","BITCOIN","harrypotterobamasonic10inu-eth",1,2023-05-11,2024-04-26
+6651,463,"USDX [Kava]","USDX","usdx-kava",1,2020-11-05,2024-04-26
+7817,464,"Bifrost","BFC","bifrost",1,2020-12-17,2024-04-26
+5877,465,"RARI","RARI","rarible",1,2020-07-20,2024-04-26
+11568,466,"Adventure Gold","AGLD","adventure-gold",1,2021-09-02,2024-04-26
+2496,467,"Polymath","POLY","polymath-network",1,2018-02-02,2024-04-26
+5117,468,"Origin Protocol","OGN","origin-protocol",1,2020-01-09,2024-04-26
+29220,469,"PepeFork","PORK","pepefork",1,2024-01-30,2024-04-26
+11374,470,"Mines of Dalarnia","DAR","mines-of-dalarnia",1,2021-11-04,2024-04-26
+25264,471,"Snek","SNEK","snek",1,2023-05-14,2024-04-26
+4039,472,"ARPA","ARPA","arpa-chain",1,2019-07-15,2024-04-26
+22359,473,"XPLA","XPLA","xpla",1,2022-10-24,2024-04-26
+24554,474,"Bazaars","BZR","bazaars",1,2023-04-19,2024-04-26
+19819,475,"REI Network","REI","rei-network",1,2022-04-27,2024-04-26
+2840,476,"QuarkChain","QKC","quarkchain",1,2018-06-04,2024-04-26
+11783,477,"GameFi.org","GAFI","gamefi",1,2021-09-10,2024-04-26
+8766,478,"MyNeighborAlice","ALICE","myneighboralice",1,2021-03-15,2024-04-26
+6554,479,"GamerCoin","GHX","gamercoin",1,2021-04-08,2024-04-26
+13969,480,"Phoenix","PHB","phoenix-global-new",1,2021-11-05,2024-04-26
+5161,481,"WazirX","WRX","wazirx",1,2020-02-06,2024-04-26
+8422,482,"Pangolin","PNG","pangolin",1,2021-04-27,2024-04-26
+2933,483,"BitMart Token","BMX","bitmart-token",1,2018-07-13,2024-04-26
+24796,484,"Art de Finance","ADF","art-de-finance",1,2023-05-30,2024-04-26
+11346,485,"RACA","RACA","radio-caca",1,2021-08-20,2024-04-26
+23195,486,"Access Protocol","ACS","access-protocol",1,2023-02-15,2024-04-26
+7859,487,"Badger DAO","BADGER","badger-dao",1,2020-12-03,2024-04-26
+5939,488,"Wrapped NXM","WNXM","wrapped-nxm",1,2020-07-28,2024-04-26
+11294,489,"SuperRare","RARE","superrare",1,2021-08-17,2024-04-26
+3951,490,"Pirate Chain","ARRR","pirate-chain",1,2019-05-22,2024-04-26
+6193,491,"Cream Finance","CREAM","cream-finance",1,2020-08-04,2024-04-26
+4038,492,"MovieBloc","MBL","moviebloc",1,2019-06-21,2024-04-26
+3600,493,"Hippocrat","HPO","hippocrat",1,2018-11-08,2024-04-26
+10052,494,"Gitcoin","GTC","gitcoin",1,2021-05-25,2024-04-26
+5893,495,"Frontier","FRONT","frontier",1,2020-09-15,2024-04-26
+12573,496,"Clearpool","CPOOL","clearpool",1,2021-10-28,2024-04-26
+3714,497,"LTO Network","LTO","lto-network",1,2019-02-06,2024-04-26
+2297,498,"StormX","STMX","stormx",1,2017-12-20,2024-04-26
+12041,499,"Dimitra","DMTR","dimitra",1,2021-09-22,2024-04-26
+7208,500,"Polkastarter","POLS","polkastarter",1,2020-09-28,2024-04-26
+21870,501,"Metaplex","MPLX","metaplex",1,2022-09-20,2024-04-26
+28111,502,"MEMETOON","MEME","memetoon",1,2023-09-25,2024-04-26
+9020,503,"Toko Token","TKO","tokocrypto",1,2021-04-07,2024-04-26
+9288,504,"BENQI","QI","benqi",1,2021-08-19,2024-04-26
+24476,505,"LimeWire","LMWR","limewire",1,2023-05-15,2024-04-26
+28066,506,"Banana Gun","BANANA","banana-gun",1,2023-09-20,2024-04-26
+7064,507,"BakeryToken","BAKE","bakerytoken",1,2020-09-23,2024-04-26
+24477,508,"ArbDoge AI","AIDOGE","arbdoge-ai",1,2023-04-17,2024-04-26
+8827,509,"Boson Protocol","BOSON","boson-protocol",1,2021-04-09,2024-04-26
+23951,510,"Staika","STIK","staika",1,2023-03-15,2024-04-26
+11212,511,"Star Atlas","ATLAS","star-atlas",1,2021-09-02,2024-04-26
+2492,512,"Elastos","ELA","elastos",1,2018-02-01,2024-04-26
+2092,513,"NULS","NULS","nuls",1,2017-10-25,2024-04-26
+1044,514,"KWD","KWD","global-currency-reserve",1,2015-08-26,2024-04-26
+2137,515,"Electroneum","ETN","electroneum",1,2017-11-02,2024-04-26
+27966,516,"Dora Factory","DORA","dora-factory-new",1,2023-09-09,2024-04-26
+9071,517,"Chainge","XCHNG","chainge",1,2021-06-24,2024-04-26
+16876,518,"Artificial Liquid Intelligence","ALI","alethea-artificial-liquid-intelligence-token",1,2022-02-14,2024-04-26
+15463,519,"SIDUS","SIDUS","sidus",1,2021-12-15,2024-04-26
+9119,520,"Alien Worlds","TLM","alien-worlds",1,2021-04-14,2024-04-26
+6950,521,"Perpetual Protocol","PERP","perpetual-protocol",1,2020-09-13,2024-04-26
+1037,522,"Agoras: Currency of Tau","AGRS","agoras-tokens",1,2015-08-24,2024-04-26
+3418,523,"Metadium","META","metadium",1,2018-10-09,2024-04-26
+5866,524,"DEXTools","DEXT","dextools",1,2020-07-19,2024-04-26
+2570,525,"Viction","VIC","viction",1,2018-03-08,2024-04-26
+4687,526,"BUSD","BUSD","binance-usd",1,2019-09-20,2024-04-26
+8107,527,"Cobak Token","CBK","cobak-token",1,2020-12-23,2024-04-26
+7505,528,"Everscale","EVER","everscale",1,2020-10-25,2024-04-26
+8479,529,"VAIOT","VAI","vaiot",1,2021-04-20,2024-04-26
+9720,530,"PlatON","LAT","platon",1,2021-05-12,2024-04-26
+5049,531,"VerusCoin","VRSC","veruscoin",1,2020-06-12,2024-04-26
+2638,532,"Cortex","CTXC","cortex",1,2018-04-16,2024-04-26
+14556,533,"Boba Network","BOBA","boba-network",1,2021-11-21,2024-04-26
+5268,534,"Energy Web Token","EWT","energy-web-token",1,2020-03-30,2024-04-26
+10631,535,"Gods Unchained","GODS","gods-unchained",1,2021-10-29,2024-04-26
+28293,536,"Ultima","ULTIMA","ultima",1,2023-10-26,2024-04-26
+11079,537,"Bitgert","BRISE","bitrise-token",1,2021-07-28,2024-04-26
+11213,538,"Star Atlas DAO","POLIS","star-atlas-polis",1,2021-09-02,2024-04-26
+3884,539,"Function X","FX","function-x",1,2019-04-25,2024-04-26
+8384,540,"CLV","CLV","clover",1,2021-07-16,2024-04-26
+2539,541,"Ren","REN","ren",1,2018-02-21,2024-04-26
+1856,542,"district0x","DNT","district0x",1,2017-08-03,2024-04-26
+9421,543,"Ampleforth Governance Token","FORTH","ampleforth-governance-token",1,2021-04-21,2024-04-26
+5821,544,"Aleph.im","ALEPH","aleph-im",1,2020-07-08,2024-04-26
+21351,545,"Sweat Economy","SWEAT","sweat-economy",1,2022-09-12,2024-04-26
+2273,546,"Uquid Coin","UQC","uquid-coin",1,2017-12-13,2024-04-26
+23015,547,"Neon EVM","NEON","neon",1,2023-07-18,2024-04-26
+20672,548,"Clash of Lilliput","COL","clash-of-lilliput",1,2022-06-27,2024-04-26
+2143,549,"Streamr","DATA","streamr",1,2017-11-03,2024-04-26
+23295,550,"Veno Finance","VNO","veno-finance-vno",1,2023-01-20,2024-04-26
+29150,551,"Ponke","PONKE","ponke",1,2024-01-23,2024-04-26
+1674,552,"Bitcoin Palladium","BTCP","cannation",1,2017-05-13,2024-04-26
+4090,553,"Wirex Token","WXT","wirex-token",1,2019-07-09,2024-04-26
+28244,554,"Niza Global","NIZA","niza-global",1,2023-10-14,2024-04-26
+3946,555,"Carry","CRE","carry",1,2019-05-17,2024-04-26
+4189,556,"Ultra","UOS","ultra",1,2019-07-30,2024-04-26
+9417,557,"Maple","MPL","maple",1,2021-05-01,2024-04-26
+28596,558,"Anchored Coins AEUR","AEUR","anchored-coins-aeur",1,2023-12-05,2024-04-26
+28508,559,"Nibiru Chain","NIBI","nibiru-chain",1,2024-03-12,2024-04-26
+9220,560,"StrikeX","STRX","strikecoin",1,2021-04-14,2024-04-26
+23246,561,"tomiNet","TOMI","tominet",1,2023-01-16,2024-04-26
+22837,562,"DIMO","DIMO","dimo",1,2022-12-15,2024-04-26
+8075,563,"Rally","RLY","rally",1,2020-12-22,2024-04-26
+6928,564,"Bella Protocol","BEL","bella-protocol",1,2020-09-15,2024-04-26
+18966,565,"NEOPIN","NPT","neopin",1,2022-03-21,2024-04-26
+1757,566,"FUNToken","FUN","funtoken",1,2017-06-27,2024-04-26
+6859,567,"Harvest Finance","FARM","harvest-finance",1,2020-09-02,2024-04-26
+3816,568,"Verasity","VRA","verasity",1,2019-04-03,2024-04-26
+13521,569,"Numbers Protocol","NUM","numbers-protocol",1,2021-11-18,2024-04-26
+29358,570,"Smog","SMOG","smog",1,2024-02-09,2024-04-26
+18679,571,"Onyxcoin","XCN","onyxcoin",1,2022-03-15,2024-04-26
+7463,572,"RAMP","RAMP","ramp",1,2020-10-20,2024-04-26
+7150,573,"Flamingo","FLM","flamingo",1,2020-10-08,2024-04-26
+3637,574,"Aergo","AERGO","aergo",1,2018-12-17,2024-04-26
+5804,575,"DeFiChain","DFI","defichain",1,2020-07-03,2024-04-26
+11307,576,"Beta Finance","BETA","beta-finance",1,2021-10-08,2024-04-26
+20886,577,"Astrafer","ASTRAFER","astrafer",1,2022-07-14,2024-04-26
+20513,578,"SaitaChain Coin","STC","saitama-inu-new",1,2022-06-08,2024-04-26
+1552,579,"Enzyme","MLN","enzyme",1,2017-02-22,2024-04-26
+23397,580,"Games for a Living","GFAL","games-for-a-living",1,2023-03-13,2024-04-26
+7055,581,"DeFi Pulse Index","DPI","defi-pulse-index",1,2020-09-15,2024-04-26
+9638,582,"SingularityDAO","SDAO","singularitydao",1,2021-05-21,2024-04-26
+8613,583,"Alchemix","ALCX","alchemix",1,2021-02-27,2024-04-26
+11078,584,"IAGON","IAG","iagon",1,2021-07-28,2024-04-26
+26032,585,"Moon Tropica","CAH","moon-tropica",1,2023-05-26,2024-04-26
+1521,586,"Komodo","KMD","komodo",1,2017-02-05,2024-04-26
+5380,587,"Hunt Town","HUNT","hunt",1,2020-03-30,2024-04-26
+7281,588,"Persistence One","XPRT","persistence",1,2021-04-01,2024-04-26
+6138,589,"DIA","DIA","dia",1,2020-08-04,2024-04-26
+5631,590,"Orion","ORN","orion-xyz",1,2020-07-16,2024-04-26
+8911,591,"Strike","STRK","strike",1,2021-04-01,2024-04-26
+28385,592,"Propbase","PROPS","propbase",1,2023-11-13,2024-04-26
+2606,593,"Wanchain","WAN","wanchain",1,2018-03-23,2024-04-26
+15563,594,"Cornucopias","COPI","cornucopias",1,2021-12-10,2024-04-26
+10409,595,"Opulous","OPUL","opulous",1,2021-09-23,2024-04-26
+28394,596,"Grok","GROK","grok-erc",1,2023-11-13,2024-04-26
+26914,597,"Statter Network","STT","statter-network",1,2023-06-15,2024-04-26
+5279,598,"Sologenic","SOLO","sologenic",1,2020-03-06,2024-04-26
+1312,599,"Steem Dollars","SBD","steem-dollars",1,2016-07-18,2024-04-26
+2348,600,"Measurable Data Token","MDT","measurable-data-token",1,2018-01-09,2024-04-26
+10465,601,"Polytrade","TRADE","polytrade",1,2021-08-19,2024-04-26
+3930,602,"ThunderCore","TT","thundercore",1,2019-05-10,2024-04-26
+24220,603,"Propchain","PROPC","propchain",1,2023-05-19,2024-04-26
+29734,604,"Zero1 Labs","DEAI","zero1-labs",1,2024-03-22,2024-04-26
+4275,605,"COMBO","COMBO","combo-network",1,2019-08-21,2024-04-26
+3928,606,"IDEX","IDEX","idex",1,2019-05-09,2024-04-26
+28656,607,"ViciCoin","VCNT","vicicoin",1,2023-12-11,2024-04-26
+7102,608,"Linear Finance","LINA","linear",1,2020-09-17,2024-04-26
+3950,609,"Neom","NEOM","netrum",1,2019-05-20,2024-04-26
+15447,610,"Lyra","LYRA","lyra-finance",1,2021-12-14,2024-04-26
+6951,611,"Reef","REEF","reef",1,2020-12-28,2024-04-26
+6069,612,"Assemble Protocol","ASM","assemble-protocol",1,2020-08-03,2024-04-26
+5919,613,"Meter Governance","MTRG","meter-governance",1,2020-07-27,2024-04-26
+2927,614,"sUSD","SUSD","susd",1,2018-07-13,2024-04-26
+4953,615,"FirmaChain","FCT","firmachain",1,2019-11-20,2024-04-26
+28479,616,"The Root Network","ROOT","the-root-network",1,2023-11-21,2024-04-26
+3316,617,"smARTOFGIVING","AOG","smartofgiving",1,2018-09-21,2024-04-26
+28067,618,"Vara Network","VARA","vara-network",1,2023-09-21,2024-04-26
+26497,619,"Clore.ai","CLORE","clore-ai",1,2023-05-31,2024-04-26
+10641,620,"RichQUACK.com","QUACK","richquack-com",1,2021-06-25,2024-04-26
+25208,621,"trac (Ordinals)","TRAC","trac",1,2023-05-20,2024-04-26
+1935,622,"Bitcoin Dominica","BTCD","litecoin-ultra",1,2017-08-30,2024-04-26
+10897,623,"Alitas","ALT","alitas",1,2021-07-14,2024-04-26
+18031,624,"Concordium","CCD","concordium",1,2022-02-15,2024-04-26
+10933,625,"Impossible Finance Launchpad","IDIA","impossible-decentralized-incubator-access",1,2021-08-18,2024-04-26
+8120,626,"Whiteheart","WHITE","whiteheart",1,2020-12-28,2024-04-26
+28704,627,"DeFinder Capital","DFC","definder-capital",1,2023-12-13,2024-04-26
+3874,628,"IRISnet","IRIS","irisnet",1,2019-04-18,2024-04-26
+6727,629,"Reserve","RSV","reserve",1,2020-08-27,2024-04-26
+8715,630,"Taraxa","TARA","taraxa",1,2021-03-22,2024-04-26
+7461,631,"PlayDapp","PDA","playdapp",1,2020-10-19,2024-04-26
+258,632,"Groestlcoin","GRS","groestlcoin",1,2014-04-11,2024-04-26
+29291,633,"Pandora","PANDORA","pandora-coin",1,2024-02-05,2024-04-26
+5429,634,"DEAPcoin","DEP","deapcoin",1,2020-04-10,2024-04-26
+16352,635,"Green Satoshi Token (SOL)","GST","green-satoshi-token",1,2021-12-22,2024-04-26
+7087,636,"Dego Finance","DEGO","dego-finance",1,2020-09-17,2024-04-26
+2856,637,"CEEK VR","CEEK","ceek-vr",1,2018-06-11,2024-04-26
+22858,638,"Dynex","DNX","dynex",1,2022-12-03,2024-04-26
+28567,639,"PaLM AI","PALM","palm-ai",1,2023-12-01,2024-04-26
+9089,640,"Tenset","10SET","tenset",1,2021-04-01,2024-04-26
+14345,641,"Botto","BOTTO","botto",1,2021-11-11,2024-04-26
+15678,642,"Voxies","VOXEL","voxies",1,2021-12-14,2024-04-26
+3661,643,"Stronghold Token","SHX","stronghold-token",1,2019-01-03,2024-04-26
+2665,644,"Dero","DERO","dero",1,2018-04-23,2024-04-26
+2763,645,"Morpheus.Network","MNW","morpheus-network",1,2018-05-22,2024-04-26
+2320,646,"xMoney","UTK","utrust",1,2017-12-29,2024-04-26
+1993,647,"Kin","KIN","kin",1,2017-09-27,2024-04-26
+8292,648,"Router Protocol","ROUTE","router-protocol",1,2021-01-20,2024-04-26
+13524,649,"Solend","SLND","solend",1,2021-11-03,2024-04-26
+16946,650,"Metacraft","MCT","metacraft",1,2022-01-06,2024-04-26
+19118,651,"Lumerin","LMR","lumerin",1,2022-03-29,2024-04-26
+5616,652,"MATH","MATH","math",1,2020-05-21,2024-04-26
+17145,653,"League of Kingdoms Arena","LOKA","league-of-kingdoms",1,2022-01-21,2024-04-26
+16399,654,"Coreum","COREUM","coreum",1,2022-03-08,2024-04-26
+2866,655,"Sentinel Protocol","UPP","sentinel-protocol",1,2018-06-18,2024-04-26
+6833,656,"Litentry","LIT","litentry",1,2021-02-03,2024-04-26
+20641,657,"EURC","EURC","euro-coin",1,2022-07-05,2024-04-26
+10469,658,"iMe Lab","LIME","ime-lab",1,2021-06-22,2024-04-26
+8206,659,"QuickSwap [Old]","QUICK","quickswap",1,2021-02-24,2024-04-26
+29478,660,"Solchat","CHAT","solchat",1,2024-02-21,2024-04-26
+12400,661,"Decimal","DEL","decimal",1,2021-10-06,2024-04-26
+2915,662,"Moss Coin","MOC","moss-coin",1,2018-07-11,2024-04-26
+29037,663,"Gaimin","GMRX","gaimin",1,2024-03-26,2024-04-26
+9386,664,"Kishu Inu","KISHU","kishu-inu",1,2021-04-25,2024-04-26
+9286,665,"Doge Killer","LEASH","doge-killer",1,2021-04-19,2024-04-26
+788,666,"Circuits of Value","COVAL","circuits-of-value",1,2015-01-23,2024-04-26
+5468,667,"Isiklar Coin","ISIKC","isiklar-coin",1,2020-04-16,2024-04-26
+21929,668,"Kwenta","KWENTA","kwenta",1,2022-12-13,2024-04-26
+8329,669,"PAID Network","PAID","paid-network",1,2021-01-26,2024-04-26
+22765,670,"ArchLoot","ALT","archloot",1,2022-11-23,2024-04-26
+19966,671,"Quickswap [New]","QUICK","quickswap-new",1,2022-05-05,2024-04-26
+10223,672,"Vega Protocol","VEGA","vegaprotocol",1,2021-09-04,2024-04-26
+4710,673,"Cere Network","CERE","cere-network",1,2021-11-08,2024-04-26
+7229,674,"Gelato","GEL","gelato",1,2021-09-14,2024-04-26
+5226,675,"Paris Saint-Germain Fan Token","PSG","paris-saint-germain-fan-token",1,2020-06-11,2024-04-26
+16919,676,"5ire","5IRE","5ire",1,2023-12-05,2024-04-26
+26585,677,"PLANET","PLANET","planettoken",1,2023-06-02,2024-04-26
+8335,678,"Mdex","MDX","mdex",1,2021-01-27,2024-04-26
+4747,679,"Velas","VLX","velas",1,2019-10-03,2024-04-26
+6520,680,"HOPR","HOPR","hopr",1,2021-02-23,2024-04-26
+12064,681,"Cratos","CRTS","cratos",1,2021-09-24,2024-04-26
+5382,682,"ELYSIA","EL","elysia",1,2020-03-30,2024-04-26
+7978,683,"Bonfida","FIDA","bonfida",1,2020-12-22,2024-04-26
+12256,684,"cheqd","CHEQ","cheqd",1,2021-11-26,2024-04-26
+22355,685,"Vertex Protocol","VRTX","vertex-protocol",1,2023-11-22,2024-04-26
+4441,686,"Vectorspace AI","VXV","vectorspace-ai",1,2019-12-04,2024-04-26
+5583,687,"Hacken Token","HAI","hackenai",1,2020-05-13,2024-04-26
+8489,688,"XSGD","XSGD","xsgd",1,2021-02-17,2024-04-26
+10789,689,"Tether EURt","EURt","tether-eurt",1,2021-07-27,2024-04-26
+28882,690,"AIT Protocol","AIT","ait-protocol",1,2023-12-29,2024-04-26
+7460,691,"Alpha Quark Token","AQT","alpha-quark-token",1,2020-10-21,2024-04-26
+9868,692,"XCAD Network","XCAD","xcad-network",1,2021-05-27,2024-04-26
+22331,693,"Farcana","FAR","farcana",1,2024-01-23,2024-04-26
+27766,694,"KYVE Network","KYVE","kyve-network",1,2023-08-07,2024-04-26
+7692,695,"e-Radix","EXRD","radix",1,2020-11-17,2024-04-26
+24911,696,"Turbo","TURBO","turbo",1,2023-05-04,2024-04-26
+21036,697,"SLG.GAMES","SLG","land-of-conquest",1,2022-07-19,2024-04-26
+6641,698,"AhaToken","AHT","ahatoken",1,2021-05-11,2024-04-26
+2398,699,"SelfKey","KEY","selfkey",1,2018-01-15,2024-04-26
+28249,700,"ZTX","ZTX","ztx",1,2023-10-17,2024-04-26
+7236,701,"Celo Dollar","CUSD","celo-dollar",1,2020-09-29,2024-04-26
+2700,702,"Celsius","CEL","celsius",1,2018-05-03,2024-04-26
+4691,703,"Zano","ZANO","zano",1,2020-01-17,2024-04-26
+5956,704,"MUX Protocol","MCB","mcdex",1,2020-07-29,2024-04-26
+15248,705,"Santos FC Fan Token","SANTOS","santos-fc-fan-token",1,2021-12-01,2024-04-26
+16334,706,"APX","APX","apollox",1,2021-12-21,2024-04-26
+19786,707,"ALTAVA","TAVA","altava",1,2022-07-07,2024-04-26
+15996,708,"pSTAKE Finance","PSTAKE","pstake-finance",1,2022-02-24,2024-04-26
+5410,709,"PARSIQ","PRQ","parsiq",1,2020-08-20,2024-04-26
+10744,710,"DeRace","DERC","derace",1,2021-08-03,2024-04-26
+9637,711,"Altura","ALU","altura",1,2021-05-07,2024-04-26
+29482,712,"Smart Layer Network","SLN","smart-layer-network",1,2024-02-23,2024-04-26
+19131,713,"Artrade","ATR","artrade",1,2022-04-06,2024-04-26
+9176,714,"RocketX exchange","RVF","rocket-vault-rocketx",1,2021-04-13,2024-04-26
+10746,715,"Biswap","BSW","biswap",1,2021-07-02,2024-04-26
+2630,716,"PolySwarm","NCT","polyswarm",1,2018-04-10,2024-04-26
+3628,717,"Moonchain","MXC","mxc",1,2018-12-07,2024-04-26
+5882,718,"StaFi","FIS","stafi",1,2020-09-13,2024-04-26
+21532,719,"Aura Finance","AURA","aura-finance",1,2022-08-23,2024-04-26
+28363,720,"Shrapnel","SHRAP","shrapnel-com",1,2023-11-08,2024-04-26
+11171,721,"Mango","MNGO","mango-markets",1,2021-08-12,2024-04-26
+7412,722,"UniLend","UFT","unilend",1,2020-10-14,2024-04-26
+3673,723,"ASD","ASD","bitmax-token",1,2019-01-08,2024-04-26
+28245,724,"Openfabric AI","OFN","openfabric-ai",1,2023-10-24,2024-04-26
+2776,725,"AVA","AVA","ava",1,2018-05-28,2024-04-26
+10891,726,"Only1","LIKE","only1",1,2021-08-03,2024-04-26
+4134,727,"Akropolis","AKRO","akropolis",1,2019-07-19,2024-04-26
+24792,728,"RabbitX","RBX","rabbitx",1,2023-05-02,2024-04-26
+24261,729,"OctaSpace","OCTA","octaspace",1,2023-04-05,2024-04-26
+9760,730,"Stratos","STOS","stratos",1,2021-06-11,2024-04-26
+4951,731,"Zynecoin","ZYN","zynecoin",1,2019-12-30,2024-04-26
+10563,732,"Decubate","DCB","decubate",1,2021-07-06,2024-04-26
+15142,733,"Katana Inu","KATA","katana-inu",1,2021-12-23,2024-04-26
+9177,734,"Pitbull","PIT","pitbull",1,2021-04-09,2024-04-26
+7672,735,"Unifi Protocol DAO","UNFI","unifi-protocol-dao",1,2020-11-19,2024-04-26
+8200,736,"Shapeshift FOX Token","FOX","fox-token",1,2021-01-06,2024-04-26
+5966,737,"Student Coin","STC","student-coin",1,2020-07-31,2024-04-26
+7535,738,"Keep3rV1","KP3R","keep3rv1",1,2020-10-27,2024-04-26
+25114,739,"Cetus Protocol","CETUS","cetus-protocol",1,2023-05-10,2024-04-26
+28395,740,"Crypto Asset Governance Alliance","CAGA","crypto-asset-governance-alliance",1,2023-11-13,2024-04-26
+3089,741,"AVINOC","AVINOC","avinoc",1,2018-08-07,2024-04-26
+7311,742,"Beefy","BIFI","beefy-finance",1,2020-10-05,2024-04-26
+5350,743,"XPR Network","XPR","proton",1,2020-04-06,2024-04-26
+10974,744,"Tranchess","CHESS","tranchess",1,2021-07-20,2024-04-26
+11367,745,"Aurory","AURY","aurory",1,2021-10-24,2024-04-26
+9029,746,"Graphlinq Chain","GLQ","graphlinq-protocol",1,2021-03-31,2024-04-26
+4056,747,"Ampleforth","AMPL","ampleforth",1,2019-06-28,2024-04-26
+6739,748,"ONBUFF","ONIT","onbuff",1,2021-11-17,2024-04-26
+18345,749,"QORPO WORLD","QORPO","qorpo",1,2024-02-29,2024-04-26
+30647,750,"Sonic The Goat","GOAT","sonic-the-goat",1,2024-04-15,2024-04-26
+1169,751,"PIVX","PIVX","pivx",1,2016-02-13,2024-04-26
+28868,752,"GameGPT","DUEL","duel",1,2024-01-12,2024-04-26
+10368,753,"Cryptex Finance","CTX","cryptex-finance",1,2021-06-09,2024-04-26
+6180,754,"Suku","SUKU","suku",1,2020-08-04,2024-04-26
+2243,755,"Dragonchain","DRGN","dragonchain",1,2017-12-03,2024-04-26
+1768,756,"AdEx","ADX","adx-net",1,2017-07-01,2024-04-26
+28135,757,"Connex","CONX","connex",1,2023-11-03,2024-04-26
+5225,758,"FC Barcelona Fan Token","BAR","fc-barcelona-fan-token",1,2020-06-24,2024-04-26
+29960,759,"Shuffle","SHFL","shuffle",1,2024-03-19,2024-04-26
+6933,760,"Nuco.cloud","NCDT","nuco-cloud",1,2020-09-08,2024-04-26
+25419,761,"HyperGPT","HGPT","hypergpt",1,2023-06-12,2024-04-26
+17588,762,"BADMAD ROBOTS","METAL","drunk-robots",1,2022-04-12,2024-04-26
+17231,763,"Synesis One","SNS","synesis-one",1,2022-01-31,2024-04-26
+20456,764,"WeBuy","WE","webuy",1,2022-06-04,2024-04-26
+9721,765,"Samoyedcoin","SAMO","samoyedcoin",1,2021-05-12,2024-04-26
+16430,766,"Tectonic","TONIC","tectonic",1,2021-12-23,2024-04-26
+22620,767,"Across Protocol","ACX","across-protocol",1,2022-11-28,2024-04-26
+12787,768,"Minswap","MIN","minswap",1,2022-06-30,2024-04-26
+2354,769,"GET Protocol","GET","get-protocol",1,2018-01-11,2024-04-26
+11222,770,"Nine Chronicles","WNCG","wrapped-ncg",1,2021-08-17,2024-04-26
+2949,771,"Kryll","KRL","kryll",1,2018-07-19,2024-04-26
+28857,772,"ZKFair","ZKF","zkfair",1,2024-01-03,2024-04-26
+6724,773,"Klever","KLV","klever",1,2020-09-09,2024-04-26
+24645,774,"OmniFlix Network","FLIX","omniflix-network",1,2023-09-06,2024-04-26
+2937,775,"VITE","VITE","vite",1,2018-07-18,2024-04-26
+3035,776,"Blocksquare Token","BST","blocksquare-token",1,2022-02-28,2024-04-26
+12664,777,"Scallop","SCLP","scallop",1,2021-10-28,2024-04-26
+21916,778,"ISKRA Token","ISK","iskra",1,2022-09-29,2024-04-26
+6715,779,"Sperax","SPA","sperax",1,2020-08-26,2024-04-26
+5865,780,"FIO Protocol","FIO","fio-protocol",1,2020-07-19,2024-04-26
+22710,781,"VIDT DAO","VIDT","vidt-dao",1,2022-11-18,2024-04-26
+2675,782,"Dock","DOCK","dock",1,2018-04-25,2024-04-26
+8707,783,"Alpaca Finance","ALPACA","alpaca-finance",1,2021-03-05,2024-04-26
+18919,784,"Shiba Predator","QOM","shiba-predator",1,2022-03-18,2024-04-26
+7576,785,"Kava Lend","HARD","hard-protocol",1,2020-11-05,2024-04-26
+17000,786,"Creo Engine","CREO","creo-engine",1,2022-05-04,2024-04-26
+12687,787,"S.S. Lazio Fan Token","LAZIO","lazio-fan-token",1,2021-10-21,2024-04-26
+2941,788,"CoinEx Token","CET","coinex-token",1,2018-10-23,2024-04-26
+2081,789,"AirDAO","AMB","airdao",1,2017-10-23,2024-04-26
+13198,790,"NuNet","NTX","nunet",1,2021-11-28,2024-04-26
+11206,791,"Bloktopia","BLOK","bloktopia",1,2021-10-06,2024-04-26
+2585,792,"CENNZnet","CENNZ","centrality",1,2018-03-13,2024-04-26
+7158,793,"BurgerCities","BURGER","burger-cities",1,2020-09-24,2024-04-26
+10293,794,"Swarm","BZZ","ethereum-swarm",1,2021-06-21,2024-04-26
+3855,795,"Locus Chain","LOCUS","locus-chain",1,2019-05-20,2024-04-26
+22320,796,"HELLO Labs","HELLO","hello-labs",1,2022-10-20,2024-04-26
+10750,797,"Open Custody Protocol","OPEN","qredo",1,2021-08-31,2024-04-26
+2643,798,"Sentinel","DVPN","sentinel",1,2018-04-17,2024-04-26
+7048,799,"Wing Finance","WING","wing",1,2020-09-16,2024-04-26
+4064,800,"USDK","USDK","usdk",1,2019-07-29,2024-04-26
+8720,801,"Inverse Finance","INV","inverse-finance",1,2021-03-08,2024-04-26
+10049,802,"Manchester City Fan Token","CITY","manchester-city-fan-token",1,2021-05-25,2024-04-26
+27686,803,"Hatom","HTM","hatom",1,2023-07-26,2024-04-26
+10687,804,"Onomy Protocol","NOM","onomy-protocol",1,2023-03-15,2024-04-26
+24133,805,"WiFi Map","WIFI","wifi-map",1,2023-04-07,2024-04-26
+6216,806,"AXEL","AXEL","axel",1,2020-08-05,2024-04-26
+9291,807,"Ternoa","CAPS","ternoa",1,2021-05-31,2024-04-26
+5947,808,"TokenPocket","TPT","tokenpocket",1,2020-07-29,2024-04-26
+14534,809,"ParaSwap","PSP","paraswap",1,2021-11-15,2024-04-26
+16678,810,"NFT Worlds","WRLD","nft-worlds",1,2021-12-30,2024-04-26
+10821,811,"Starlink","STARL","star-link",1,2021-07-10,2024-04-26
+22607,812,"FONSmartChain","FON","fonsmartchain",1,2023-03-07,2024-04-26
+29494,813,"DUKO","DUKO","duko",1,2024-02-21,2024-04-26
+21796,814,"Lingose","LING","lingose",1,2022-09-13,2024-04-26
+6837,815,"Nodle","NODL","nodleiot",1,2022-08-26,2024-04-26
+20497,816,"WAGMI Games","WAGMIGAMES","wagmi-game-2",1,2022-06-07,2024-04-26
+132,817,"Counterparty","XCP","counterparty",1,2014-02-15,2024-04-26
+10729,818,"UFO Gaming","UFO","ufo-gaming",1,2021-06-30,2024-04-26
+19650,819,"Volt Inu","VOLT","volt-inu-v2",1,2022-04-20,2024-04-26
+11821,820,"Swarm Markets","SMT","swarm-markets",1,2021-09-11,2024-04-26
+7440,821,"BarnBridge","BOND","barnbridge",1,2020-10-25,2024-04-26
+23546,822,"Carbon browser","CSIX","carbon-browser",1,2023-02-18,2024-04-26
+213,823,"MonaCoin","MONA","monacoin",1,2014-03-20,2024-04-26
+24686,824,"Helium IOT","IOT","helium-iot",1,2023-04-24,2024-04-26
+25232,825,"Abelian","ABEL","abelian",1,2023-12-05,2024-04-26
+8066,826,"Yield App","YLD","yield-app",1,2020-12-25,2024-04-26
+5309,827,"OG Fan Token","OG","og-fan-token",1,2020-06-21,2024-04-26
+7396,828,"r/CryptoCurrency Moons","MOON","moon",1,2021-03-16,2024-04-26
+2058,829,"AirSwap","AST","airswap",1,2017-10-17,2024-04-26
+1948,830,"Aventus","AVT","aventus",1,2017-09-06,2024-04-26
+8992,831,"Cellframe","CELL","cellframe",1,2021-03-29,2024-04-26
+21134,832,"SquidGrow","SQUIDGROW","squid-grow",1,2022-07-26,2024-04-26
+10778,833,"Metahero","HERO","metahero",1,2021-07-07,2024-04-26
+27276,834,"Pepe 2.0","PEPE2.0","pepe-2-0",1,2023-06-28,2024-04-26
+20825,835,"Petals","PTS","petals",1,2022-06-30,2024-04-26
+10430,836,"Argentine Football Association Fan Token","ARG","argentinefootballassociationfantoken",1,2021-08-10,2024-04-26
+9741,837,"Solanium","SLIM","solanium",1,2021-06-01,2024-04-26
+13272,838,"Credefi","CREDI","credefi",1,2021-12-09,2024-04-26
+1414,839,"Firo","FIRO","firo",1,2016-10-06,2024-04-26
+8938,840,"Ellipsis","EPS","ellipsis",1,2021-03-24,2024-04-26
+2019,841,"Viberate","VIB","viberate",1,2017-10-06,2024-04-26
+5640,842,"PointPay","PXP","pointpay",1,2020-05-28,2024-04-26
+18112,843,"Alpine F1 Team Fan Token","ALPINE","alpine-f1-team-fan-token",1,2022-02-21,2024-04-26
+14977,844,"Mintlayer","ML","mintlayer",1,2023-03-29,2024-04-26
+27195,845,"Neurai","XNA","neurai",1,2023-06-27,2024-04-26
+3581,846,"Kleros","PNK","kleros",1,2018-11-01,2024-04-26
+15084,847,"Symbiosis","SIS","symbiosis-finance",1,2021-12-07,2024-04-26
+29297,848,"Orange","ORNJ","orange-crypto",1,2024-02-06,2024-04-26
+28211,849,"Shido [New]","SHIDO","shido-inu-new",1,2023-10-04,2024-04-26
+15270,850,"Vita Inu","VINU","vita-inu",1,2021-12-03,2024-04-26
+4758,851,"dForce","DF","dforce",1,2020-06-22,2024-04-26
+9892,852,"YooShi","YOOSHI","yooshi",1,2021-05-18,2024-04-26
+5007,853,"TROY","TROY","troy",1,2019-12-06,2024-04-26
+8271,854,"Poolz Finance","POOLX","poolz-finance",1,2021-01-18,2024-04-26
+10275,855,"Catgirl","CATGIRL","catgirl",1,2021-06-03,2024-04-26
+23794,856,"Optimus AI","OPTI","optimus-ai",1,2023-03-07,2024-04-26
+19705,857,"Castello Coin","CAST","castello-coin",1,2022-04-22,2024-04-26
+5552,858,"Hathor","HTR","hathor",1,2020-09-24,2024-04-26
+12623,859,"Stader","SD","stader",1,2022-03-15,2024-04-26
+1712,860,"Quantum Resistant Ledger","QRL","quantum-resistant-ledger",1,2017-06-10,2024-04-26
+2316,861,"DeepBrain Chain","DBC","deepbrain-chain",1,2017-12-28,2024-04-26
+29331,862,"OORT","OORT","oortech",1,2024-02-07,2024-04-26
+3422,863,"SHPING","SHPING","shping",1,2018-10-10,2024-04-26
+8276,864,"Arianee","ARIA20","arianee-protocol",1,2021-01-18,2024-04-26
+7726,865,"ICHI","ICHI","ichi",1,2021-01-15,2024-04-26
+14052,866,"FC Porto Fan Token","PORTO","fc-porto",1,2021-11-16,2024-04-26
+2341,867,"SwftCoin","SWFTC","swftcoin",1,2018-01-09,2024-04-26
+27445,868,"GameSwift","GSWIFT","gameswift",1,2023-07-21,2024-04-26
+5453,869,"KardiaChain","KAI","kardiachain",1,2020-04-17,2024-04-26
+25963,870,"BlackFort Exchange Network","BXN","blackfort-exchange-network",1,2024-04-02,2024-04-26
+19621,871,"Cosplay Token","COT","cosplay-token",1,2022-04-19,2024-04-26
+22866,872,"Radiant","RXD","radiant",1,2022-12-05,2024-04-26
+12221,873,"Rangers Protocol Gas","RPG","rangers-protocol",1,2021-10-07,2024-04-26
+20009,874,"DexCheck AI","DCK","dexcheck",1,2023-07-21,2024-04-26
+18662,875,"Galeon","GALEON","galeon",1,2022-03-10,2024-04-26
+1556,876,"Chrono.tech","TIME","chrono-tech",1,2017-02-27,2024-04-26
+5777,877,"renBTC","RENBTC","renbtc",1,2020-07-21,2024-04-26
+22970,878,"Carrieverse","CVTX","carrieverse",1,2023-01-31,2024-04-26
+8216,879,"Electra Protocol","XEP","electra-protocol",1,2021-01-08,2024-04-26
+2222,880,"Bitcoin Diamond","BCD","bitcoin-diamond",1,2017-11-24,2024-04-26
+7424,881,"Hermez Network","HEZ","hermez-network",1,2020-10-17,2024-04-26
+1866,882,"Bytom","BTM","bytom",1,2017-08-08,2024-04-26
+5072,883,"Rakon","RKN","rakon",1,2019-12-25,2024-04-26
+20789,884,"Dejitaru Tsuka","TSUKA","dejitaru-tsuka",1,2022-06-28,2024-04-26
+5957,885,"DFI.Money","YFII","yearn-finance-ii",1,2020-07-29,2024-04-26
+24190,886,"Fulcrom Finance","FUL","fulcrom-finance",1,2023-04-03,2024-04-26
+3437,887,"ABBC Coin","ABBC","abbc-coin",1,2018-10-12,2024-04-26
+8772,888,"ZUSD","ZUSD","zusd",1,2021-03-10,2024-04-26
+19778,889,"Step App","FITFI","step-app",1,2022-04-26,2024-04-26
+14336,890,"TRVL","TRVL","trvl",1,2021-11-26,2024-04-26
+11409,891,"Tarot","TAROT","tarot",1,2021-08-26,2024-04-26
+8144,892,"OVR","OVR","ovr",1,2020-12-30,2024-04-26
+10586,893,"TABOO TOKEN","TABOO","taboo-token",1,2021-06-23,2024-04-26
+16481,894,"Kasta","KASTA","kasta",1,2022-01-05,2024-04-26
+7590,895,"Dvision Network","DVI","dvision-network",1,2020-11-03,2024-04-26
+2289,896,"Gifto","GFT","gifto",1,2017-12-18,2024-04-26
+5829,897,"TrustSwap","SWAP","trustswap",1,2020-07-10,2024-04-26
+28446,898,"SPECTRE AI","SPECTRE","spectre-ai",1,2023-11-19,2024-04-26
+8519,899,"Xend Finance","RWA","xend-finance",1,2021-03-23,2024-04-26
+28610,900,"Inspect","INSP","inspect",1,2023-12-06,2024-04-26
+28094,901,"Prisma mkUSD","MKUSD","prisma-mkusd",1,2023-09-21,2024-04-26
+8894,902,"Deeper Network","DPR","deeper-network",1,2021-04-10,2024-04-26
+19590,903,"Defigram","DFG","defigram",1,2022-04-20,2024-04-26
+4890,904,"Newscrypto","NWC","newscrypto",1,2019-11-06,2024-04-26
+12089,905,"Coinweb","CWEB","coinweb",1,2021-12-30,2024-04-26
+5221,906,"Handshake","HNS","handshake",1,2020-02-21,2024-04-26
+4746,907,"Quiztok","QTCON","quiztok",1,2020-04-28,2024-04-26
+7878,908,"MobileCoin","MOB","mobilecoin",1,2020-12-06,2024-04-26
+9608,909,"SpookySwap","BOO","spookyswap",1,2021-09-01,2024-04-26
+19779,910,"DMAIL Network","DMAIL","dmail-network",1,2024-01-30,2024-04-26
+29015,911,"Solama","SOLAMA","solama",1,2024-01-12,2024-04-26
+1700,912,"Æternity","AE","aeternity",1,2017-06-01,2024-04-26
+19134,913,"Bubblefong","BBF","bubblefong",1,2022-03-28,2024-04-26
+28106,914,"zkSwap Finance","ZF","zkswap-finance",1,2023-09-20,2024-04-26
+28443,915,"Verified USD","USDV","verified-usd",1,2023-11-17,2024-04-26
+22264,916,"Oho","OHO","oho",1,2022-10-18,2024-04-26
+28962,917,"VoluMint","VMINT","volumint",1,2024-01-06,2024-04-26
+28836,918,"Kimbo","KIMBO","kimbo",1,2023-12-25,2024-04-26
+9764,919,"MILC Platform","MLT","milc-platform",1,2021-05-18,2024-04-26
+5224,920,"Juventus Fan Token","JUV","juventus-fan-token",1,2020-04-22,2024-04-26
+21320,921,"Thrupenny","TPY","thrupenny",1,2022-08-09,2024-04-26
+12319,922,"DeFi Kingdoms","JEWEL","defi-kingdoms",1,2021-11-25,2024-04-26
+11035,923,"Splintershards","SPS","splintershards",1,2021-07-26,2024-04-26
+2454,924,"Bitcoin Unlimited","BTCU","unlimitedip",1,2018-01-24,2024-04-26
+21414,925,"Dogechain","DC","dogechain",1,2022-08-25,2024-04-26
+8034,926,"BioPassport Token","BIOT","biopassport-token",1,2021-03-02,2024-04-26
+1853,927,"OAX","OAX","oax",1,2017-07-31,2024-04-26
+17242,928,"UBXS Token","UBXS","ubxs",1,2022-01-13,2024-04-26
+29855,929,"The First Youtube Cat","PAJAMAS","the-first-youtube-cat",1,2024-03-14,2024-04-26
+2827,930,"Phantasma","SOUL","phantasma",1,2018-05-28,2024-04-26
+22052,931,"SpaceN","SN","spacen",1,2022-10-03,2024-04-26
+23081,932,"UNS TOKEN","UNS","uns-token",1,2023-03-31,2024-04-26
+4118,933,"ForTube","FOR","the-force-protocol",1,2019-07-17,2024-04-26
+17742,934,"Cult DAO","CULT","cult-dao",1,2022-02-03,2024-04-26
+14304,935,"Gamium","GMM","gamium",1,2022-03-30,2024-04-26
+28789,936,"Silly Dragon","SILLY","silly-dragon",1,2023-12-21,2024-04-26
+5228,937,"Galatasaray Fan Token","GAL","galatasaray-fan-token",1,2020-06-08,2024-04-26
+24303,938,"Metacade","MCADE","metacade",1,2023-04-07,2024-04-26
+1817,939,"Voyager Token","VGX","voyager-token",1,2017-07-18,2024-04-26
+1883,940,"Adshares","ADS","adshares",1,2017-08-12,2024-04-26
+7245,941,"Stobox Token","STBU","stobox-token",1,2020-10-05,2024-04-26
+6830,942,"KILT Protocol","KILT","kiltprotocol",1,2021-11-25,2024-04-26
+4228,943,"Ferrum Network","FRM","ferrum-network",1,2019-08-29,2024-04-26
+11451,944,"Shiden Network","SDN","shiden-network",1,2021-08-30,2024-04-26
+16882,945,"Magic Square","SQR","magic-square",1,2024-01-12,2024-04-26
+8705,946,"Bifrost","BNC","bifrost-bnc",1,2021-10-21,2024-04-26
+24877,947,"BIM","BIM","bim",1,2023-05-03,2024-04-26
+23262,948,"Areon Network","AREA","areon-network",1,2023-01-18,2024-04-26
+5,949,"Peercoin","PPC","peercoin",1,2013-04-28,2024-04-26
+7740,950,"Polaris Share","POLA","polaris-share",1,2021-01-27,2024-04-26
+10759,951,"rhino.fi","DVF","deversifi",1,2021-07-12,2024-04-26
+16996,952,"Pip","PIP","pip",1,2023-02-28,2024-04-26
+8296,953,"KLAYswap Protocol","KSP","klayswap-protocol",1,2021-01-20,2024-04-26
+2474,954,"Matrix AI Network","MAN","matrix-ai-network",1,2018-01-27,2024-04-26
+4366,955,"MixMarvel","MIX","mixmarvel",1,2019-09-02,2024-04-26
+90,956,"Dimecoin","DIME","dimecoin",1,2014-01-06,2024-04-26
+20719,957,"OpenLeverage","OLE","openleverage",1,2022-07-07,2024-04-26
+27009,958,"UniBot","UNIBOT","unibot-eth",1,2023-06-16,2024-04-26
+27615,959,"r/FortNiteBR Bricks","BRICK","bricks",1,2023-07-18,2024-04-26
+8642,960,"Fei USD","FEI","fei-usd",1,2021-04-03,2024-04-26
+25479,961,"Bad Idea AI","BAD","bad-idea-ai",1,2023-05-21,2024-04-26
+21217,962,"MangoMan Intelligent","MMIT","mangoman-intelligent",1,2022-08-03,2024-04-26
+17722,963,"Ambire Wallet","WALLET","ambire-wallet",1,2022-01-30,2024-04-26
+28664,964,"Byte","BYTE","byte",1,2023-12-11,2024-04-26
+5634,965,"Fuse","FUSE","fuse-network",1,2021-01-31,2024-04-26
+12873,966,"KlimaDAO","KLIMA","klimadao",1,2021-10-19,2024-04-26
+23665,967,"SpaceCatch","CATCH","spacecatch",1,2024-04-01,2024-04-26
+19111,968,"Bostrom","BOOT","bostrom",1,2022-04-09,2024-04-26
+17794,969,"ParagonsDAO","PDT","paragonsdao",1,2022-02-01,2024-04-26
+6747,970,"Crust Network","CRU","crustnetwork",1,2020-09-22,2024-04-26
+29387,971,"Asterix Labs","ASTX","asterix-labs",1,2024-02-13,2024-04-26
+5227,972,"Atletico De Madrid Fan Token","ATM","atletico-de-madrid-fan-token",1,2020-06-21,2024-04-26
+19924,973,"Ellipsis","EPX","ellipsis-epx",1,2022-05-04,2024-04-26
+9443,974,"Step Finance","STEP","step-finance",1,2021-04-26,2024-04-26
+22892,975,"Atlas Navi","NAVI","atlas-navi",1,2022-12-06,2024-04-26
+11532,976,"Arsenal Fan Token","AFC","arsenal-fan-token",1,2021-10-27,2024-04-26
+17073,977,"Affyn","FYN","affyn",1,2022-01-29,2024-04-26
+30177,978,"LinqAI","LNQ","linqai",1,2024-03-28,2024-04-26
+16711,979,"GT Protocol","GTAI","gt-protocol",1,2024-01-26,2024-04-26
+8567,980,"HAPI Protocol","HAPI","hapi-one",1,2021-03-10,2024-04-26
+3724,981,"SOLVE","SOLVE","solve",1,2019-02-04,2024-04-26
+12148,982,"Swash","SWASH","swash",1,2021-10-31,2024-04-26
+8538,983,"AC Milan Fan Token","ACM","ac-milan-fan-token",1,2021-02-22,2024-04-26
+21822,984,"Brickken","BKN","brickken",1,2023-07-25,2024-04-26
+6993,985,"REVV","REVV","revv",1,2020-09-10,2024-04-26
+29445,986,"zKML","ZKML","zkml",1,2024-02-19,2024-04-26
+2916,987,"Nimiq","NIM","nimiq",1,2018-07-26,2024-04-26
+3973,988,"Aryacoin","AYA","aryacoin",1,2019-05-27,2024-04-26
+8049,989,"Tornado Cash","TORN","torn",1,2021-02-09,2024-04-26
+20315,990,"LeisureMeta","LM","leisuremeta",1,2022-05-26,2024-04-26
+10047,991,"EPIK Prime","EPIK","epik-prime",1,2021-08-27,2024-04-26
+2387,992,"Bitcoin Atom","BCA","bitcoin-atom",1,2018-01-13,2024-04-26
+6855,993,"BIDR","BIDR","binance-idr",1,2020-09-02,2024-04-26
+29386,994,"LandX Finance","LNDX","landx-finance",1,2024-02-13,2024-04-26
+9194,995,"Saito","SAITO","saito",1,2021-04-22,2024-04-26
+11871,996,"GameZone","GZONE","gamezone",1,2021-09-30,2024-04-26
+4566,997,"XDB CHAIN","XDB","xdbchain",1,2019-09-13,2024-04-26
+7664,998,"UNCX Network","UNCX","uncx",1,2020-11-12,2024-04-26
+8649,999,"Oxbull.tech","OXB","oxbull-tech",1,2021-03-02,2024-04-26
+8245,1000,"Hydra","HYDRA","hydra",1,2021-01-12,2024-04-26
