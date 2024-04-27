@@ -1,0 +1,234 @@
+---
+title: "CryptoData"
+author: "yogesh sahu"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r}
+#changing or saving the data 
+setwd("C:/Users/44776/Documents/GitHub/CryptoDataFetcher/CryptoDataFetcher2.0")
+```
+```{r}
+library(crypto2)
+```
+```{r Library, include=FALSE}
+library(prophet)
+library(tidyverse)
+library(crypto2)
+```
+
+
+```{r}
+# Get Data from CoinMarketCap
+coin_list_all <- crypto_list(only_active = TRUE)
+```
+
+```{r}
+coin_list_1000 <- head(coin_list_all[order(coin_list_all$rank), ], 1000)
+
+```
+
+
+```{r}
+# Define the file name and path for the output CSV file
+output_file_path <- paste0(getwd(), "/Top_1000_Cryptocurrencies.csv")
+
+# Write the data to a CSV file in the working directory
+write.csv(coin_list_1000, output_file_path, row.names = FALSE)
+
+# Optional: Message to confirm file has been written
+message(paste("The CSV file has been created at:", output_file_path))
+```
+
+```{r}
+crypto_hist <- crypto_history(coin_list = coin_list_1000,
+                              convert = "USD", # change to USD or other currency if desired
+                              limit = NULL,
+                              sleep = 1)
+```
+```{r}
+# Select Date and Time from Dataset & ignore the rest
+crypto_hist <- select(crypto_hist,timestamp, close)
+
+# Rename columns to "ds" and "y" in order to use Prophet library
+crypto_hist <- rename(crypto_hist, ds = timestamp, y = close)
+
+```
+```{r}
+# Calculate percentage change in closing price
+crypto_hist <- crypto_hist %>%
+  mutate(pct_change = (close - lag(close)) / lag(close) * 100)
+```
+
+```{r}
+# Load necessary libraries
+library(dplyr)
+library(lubridate)
+
+# Assuming 'crypto_hist' is your dataset
+# Parse datetime columns if they are not already in datetime format
+crypto_hist <- crypto_hist %>%
+  mutate(
+    time_open = ymd_hms(time_open),
+    time_close = ymd_hms(time_close),
+    time_high = ymd_hms(time_high),
+    time_low = ymd_hms(time_low)
+  )
+
+# Extract date and time components
+crypto_hist <- crypto_hist %>%
+  mutate(
+    date_open = as.Date(time_open),
+    date_close = as.Date(time_close),
+    date_high = as.Date(time_high),
+    date_low = as.Date(time_low),
+    time_open = format(time_open, "%H:%M:%S"),
+    time_close = format(time_close, "%H:%M:%S"),
+    time_high = format(time_high, "%H:%M:%S"),
+    time_low = format(time_low, "%H:%M:%S")
+  )
+
+# Check the first few rows to confirm changes
+print(head(crypto_hist))
+
+```
+```{r}
+# Load necessary libraries
+library(dplyr)
+library(lubridate)
+
+# Assuming 'crypto_hist' is your dataset
+# Parse the 'timestamp' column if it is not already in datetime format
+crypto_hist <- crypto_hist %>%
+  mutate(
+    timestamp = ymd_hms(timestamp)  # Convert to POSIXct datetime object
+  )
+
+# Extract date and time components from the 'timestamp' column
+crypto_hist <- crypto_hist %>%
+  mutate(
+    date_timestamp = as.Date(timestamp),   # Extract date part
+    time_timestamp = format(timestamp, "%H:%M:%S")  # Extract time part
+  )
+
+# Optionally remove the original 'timestamp' column if no longer needed
+# crypto_hist <- select(crypto_hist, -timestamp)
+
+# Check the first few rows to confirm changes
+print(head(crypto_hist))
+
+```
+```{r}
+# Load necessary library
+library(dplyr)
+
+# Assuming 'crypto_hist' is your dataset
+# Drop the specified columns
+crypto_hist <- crypto_hist %>%
+  select(
+    -time_timestamp,
+    -date_high,
+    -date_low,
+    -date_open,
+    -date_close,
+    -timestamp,
+    -time_close
+  )
+
+# Check the structure of the updated dataset to confirm columns are dropped
+print(head(crypto_hist))
+str(crypto_hist)
+
+```
+
+```{r}
+# Load necessary library
+library(dplyr)
+
+
+# Reorder columns to start with 'date_timestamp', followed by 'id', 'slug', 'name', 'symbol'
+# and then arrange the remaining columns as specified
+crypto_hist <- crypto_hist %>%
+  select(
+    date_timestamp, id, slug, name, symbol, # Starting columns
+    open, time_open, high, time_high, low, time_low, close, time_close, # Trading data with timestamps
+    volume, market_cap, # Financial data
+    ref_cur # Ending with the reference currency
+  )
+```
+
+```{r}
+# Rename the 'timestamp' column to 'Date'
+crypto_hist <- crypto_hist %>%
+  rename(Date = date_timestamp)
+```
+
+```{r}
+# Check the structure to confirm new order
+print(head(crypto_hist))
+```
+```{r}
+# Define the file name for the coin
+    coin_file_name <- paste0(output_dir, "/crypto/", "crypto_hist.csv")
+    
+# Write the filtered data to a CSV file
+    write.csv(crypto_hist, coin_file_name, row.names = FALSE)
+```
+
+```{r}
+# Load necessary libraries
+library(readxl)  # For reading Excel files
+library(writexl) # For writing Excel files
+library(dplyr)   # For data manipulation
+
+# Define the output directory path
+output_dir <- "C:/Users/44776/Documents/GitHub/CryptoDataFetcher/CryptoDataFetcher2.0/DATA/Crypto/"
+
+# Create the directory if it does not exist
+if (!dir.exists(output_dir)) {
+  dir.create(output_dir, recursive = TRUE, showWarnings = TRUE)
+}
+```
+
+
+
+
+```{r}
+ 
+  # Loop through each unique id
+  for (coin_id in unique_ids) {
+    # Filter data for the current id
+    coin_data <- filter(crypto_hist, id == coin_id)
+    
+    # Retrieve the associated slug for the current id for file naming
+    if (nrow(coin_data) > 0) {
+      coin_slug <- coin_data$slug[1]  # Assuming the same id always corresponds to the same slug
+    } else {
+      coin_slug <- "unknown"  # Fallback if no data found
+    }
+    
+    # Debug message to check if filtering works
+    message(paste("Processing id", coin_id, "with", nrow(coin_data), "rows and slug", coin_slug))
+    
+    # Define the file name for the coin using slug
+    coin_file_name <- paste0(output_dir, coin_slug, ".xlsx")
+    
+    # Write the filtered data to an Excel file
+    write_xlsx(coin_data, coin_file_name)
+    
+    # Message to confirm file has been written
+    message(paste("Excel file for slug", coin_slug, "has been created at:", coin_file_name))
+  }
+  
+  message("All data processed and saved for each cryptocurrency id.")
+  
+
+}else {
+  message("'id' column not found in the dataset.")
+}
+
+```
+
+
+

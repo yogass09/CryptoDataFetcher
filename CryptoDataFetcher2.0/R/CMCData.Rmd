@@ -1,0 +1,35 @@
+---
+title: "CMCData"
+author: "yogesh sahu"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r}
+#changing or saving the data 
+setwd("C:/Users/44776/Documents/GitHub/CryptoDataFetcher/CryptoDataFetcher2.0/DATA")
+```
+
+```{r}
+library(yfR)
+```
+
+```{r}
+CMCData<- yf_get(tickers = CMC$Ticker,
+    first_date = "2010-01-01",  # Specify the start date for historical data
+    last_date = Sys.Date() )
+
+```
+
+```{r}
+# Define the file name and path for the output CSV file
+output_file_path <- paste0(getwd(), "/CMCData.csv")
+
+# Write the data to a CSV file in the working directory
+write.csv(CMCData, output_file_path, row.names = FALSE)
+
+# Optional: Message to confirm file has been written
+message(paste("The CSV file has been created at:", output_file_path))
+```
+```
+
