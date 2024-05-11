@@ -1,0 +1,74 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(dplyr)
+
+df <- as.data.frame(df)
+library(dplyr)
+
+# Assuming your data frame 'df' has a 'date' column in a recognizable date format
+# Ensure 'date' is in the correct Date format
+df$date <- as.Date(df$date, format = "%d/%m/%Y")
+
+# Filter out rows where the date is on or before December 31, 2015
+df <- df %>%
+  filter(date > as.Date("2015-12-31"))
+
+
+crypto_df <- df %>%
+  group_by(ticker) %>%
+  mutate(
+    `1d%` = round((close - lag(close)) / lag(close), 4)
+  )
+na.omit(crypto_df)
+```
+
+```{r eval=FALSE, include=FALSE}
+# Define the risk-free rate
+rf <- 0.01  # Assuming 1% as risk-free rate
+
+# Group by ticker and calculate Sortino Ratio
+crypto_df <- crypto_df %>%
+  group_by(ticker) %>%
+  mutate(
+    downside_returns = ifelse(`1d%` < 0, `1d%`, NA),  # Extract downside returns
+    downside_deviation = sd(downside_returns, na.rm = TRUE),  # Calculate downside deviation
+    sortino_ratio = (mean(`1d%`, na.rm = TRUE) - rf) / downside_deviation  # Calculate Sortino Ratio
+  ) %>%
+  ungroup()
+
+# Display the DataFrame with Ticker and Sortino Ratio
+sortino_ratio<-(crypto_df[, c("ticker", "sortino_ratio")])
+
+
+```
+
+```{r}
+# Define the risk-free rate
+rf <- 0.01  # Assuming 1% as risk-free rate
+
+# Group by ticker, calculate and average out the Sortino Ratio for each ticker
+sortino_ratio_df <- crypto_df %>%
+  group_by(ticker) %>%
+  summarise(
+    downside_returns = mean(ifelse(`1d%` < 0, `1d%`, NA), na.rm = TRUE),  # Average of downside returns
+    average_return = mean(`1d%`, na.rm = TRUE),  # Average of all daily returns
+    downside_deviation = sd(ifelse(`1d%` < 0, `1d%`, NA), na.rm = TRUE),  # Standard deviation of downside returns
+    sortino_ratio = round((average_return - rf) / (downside_deviation + 1e-10), 2)  # Calculation of Sortino Ratio rounded to 4 decimals
+  ) %>%
+  select(ticker, sortino_ratio) %>%
+  ungroup()
+
+# Print the Sortino Ratio dataframe
+print(sortino_ratio_df)
+
+
+```
+
+```{r}
+write.csv(sortino_ratio_df, file = "sortino_ratio.csv", row.names = FALSE)
+```
+

@@ -1,0 +1,140 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(readr)
+CryptoMasterFile <- read_csv("~/GitHub/CryptoDashboardPitch/Data FIles/CryptoMasterFile.csv")
+#View(CryptoMasterFile)
+
+
+library(dplyr)
+
+
+df <- as.data.frame(CryptoMasterFile)
+library(dplyr)
+
+# Assuming your data frame 'df' has a 'date' column in a recognizable date format
+# Ensure 'date' is in the correct Date format
+df$date <- as.Date(df$date, format = "%d/%m/%Y")
+
+# Filter out rows where the date is on or before December 31, 2015
+df <- df %>%
+  filter(date > as.Date("2019-12-31"))
+
+# Drop the column named 'open'
+df <- df %>%
+  select(-open)
+# Change the format to "ddmmyyyy"
+df$date <- format(df$date, "%d/%m/%Y")
+
+# Rename 'symbol' to 'ticker'
+names(df)[names(df) == "symbol"] <- "ticker"
+df<- df %>%
+  select(date, ticker, close)
+head(df)
+```
+```{r}
+library(dplyr)
+
+# Assuming your dataframe is called df
+df <- df %>%
+  filter(substr(date, 1, 2) == "01")  # Filter to include only rows where the day is "01"
+
+```
+
+```{r}
+library(dplyr)
+
+# Ensure the data is ordered properly
+df <- df %>% arrange(ticker, date)
+
+# Calculate rolling percentage changes with shorter names and round to 4 decimals
+df <- df %>%
+  group_by(ticker) %>%
+  mutate(
+    `M%` = round((close - lag(close)) / lag(close), 4)
+  )
+
+# Calculate maximum drawdown for each cryptocurrency
+df <- df %>%
+  group_by(ticker) %>%
+  mutate(
+    peak = max(close),
+    trough = min(close[which.max(close):n()]),
+    drawdown = round((peak - close) / peak,4)
+  )%>%
+  select(-peak, -trough)  # Remove peak and trough columns
+
+df
+
+```
+```{r}
+# Calculate mean of M% column for each ticker
+mean_M_percent <- df %>%
+  group_by(ticker) %>%
+  summarize(
+    mean_M_percent = round(mean(`M%`, na.rm = TRUE),4)
+  )
+
+# Display the dataframe with mean of M% column
+print(mean_M_percent)
+```
+
+
+```{r}
+# Calculate maximum drawdown for each ticker
+max_drawdown <- df %>%
+  group_by(ticker) %>%
+  summarize(
+    max_drawdown = max(drawdown)
+  )
+
+# Display the dataframe with maximum drawdown for each ticker
+print(max_drawdown)
+
+```
+```{r}
+# Merge dataframes max_drawdown and mean_M_percent based on ticker
+merged_data <- merge(max_drawdown, mean_M_percent, by = "ticker")
+# Calculate Calmar Ratio
+merged_data$Calmar_Ratio <- round(merged_data$mean_M_percent / merged_data$max_drawdown, 4)
+
+# Rename the merged dataframe to Calmar ratio
+colnames(merged_data)[colnames(merged_data) == "max_drawdown"] <- "Max_Drawdown"
+colnames(merged_data)[colnames(merged_data) == "mean_M_percent"] <- "Mean_M_Percent"
+
+# Save the dataframe to a CSV file
+write.csv(merged_data, "Calmar_ratio.csv", row.names = FALSE)
+
+# Display the Calmar Ratio dataframe
+print(merged_data)
+
+```
+```{r eval=FALSE, include=FALSE}
+
+# Set the threshold (could be zero or any other value)
+threshold <- 0
+
+# Assuming 'crypto_data' contains a column 'log_return' for the monthly log returns
+crypto_data <- crypto_data %>%
+  mutate(excess_return = log_return - threshold)
+
+# Calculate Omega ratio for each ticker
+omega_by_ticker <- crypto_data %>%
+  group_by(ticker) %>%
+  summarise(
+    sum_positive_excess = sum(excess_return[excess_return > 0], na.rm = TRUE),
+    sum_negative_excess = sum(abs(excess_return[excess_return < 0]), na.rm = TRUE),
+    omega_ratio = sum_positive_excess / sum_negative_excess
+  )
+
+# Print Omega ratio by ticker
+print(omega_by_ticker)
+
+```
+```
+
+
+

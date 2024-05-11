@@ -1,0 +1,119 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+```{r}
+# Load dplyr if not already loaded
+library(dplyr)
+library(readr)
+CryptoMasterFile <- read_csv("~/GitHub/CryptoDashboardPitch/Data FIles/CryptoMasterFile.csv")
+#View(CryptoMasterFile)
+
+# Alternatively, select all columns up to the second-to-last
+df <- CryptoMasterFile %>%
+  select(1:(ncol(CryptoMasterFile) - 8))
+
+
+# Load dplyr if not already loaded
+library(dplyr)
+
+# Drop the column named 'open'
+df <- df %>%
+  select(-open)
+# Change the format to "ddmmyyyy"
+df$date <- format(df$date, "%d/%m/%Y")
+
+# Rename 'symbol' to 'ticker'
+names(df)[names(df) == "symbol"] <- "ticker"
+
+# Verify the change
+#head(returns_crypto)
+
+returns_crypto<-df
+```
+```{r echo=TRUE}
+library(dplyr)
+library(zoo)
+
+# Ensure the data is ordered properly
+returns_crypto <- df %>% arrange(ticker, date)
+library(dplyr)
+library(zoo)
+
+# Ensure the data is ordered properly
+returns_crypto <- df %>% arrange(ticker, date)
+
+# Calculate rolling percentage changes with shorter names and round to 4 decimals
+returns_crypto <- returns_crypto %>%
+  group_by(ticker) %>%
+  mutate(
+    `1d%` = round((close - lag(close)) / lag(close), 4),
+    `3d%` = round((close - lag(rollapply(close, 3, mean, fill = NA, align = "right"))) / lag(rollapply(close, 3, mean, fill = NA, align = "right")), 4),
+    `7d%` = round((close - lag(rollapply(close, 7, mean, fill = NA, align = "right"))) / lag(rollapply(close, 7, mean, fill = NA, align = "right")), 4),
+    `14d%` = round((close - lag(rollapply(close, 14, mean, fill = NA, align = "right"))) / lag(rollapply(close, 14, mean, fill = NA, align = "right")), 4),
+    `30d%` = round((close - lag(rollapply(close, 30, mean, fill = NA, align = "right"))) / lag(rollapply(close, 30, mean, fill = NA, align = "right")), 4),
+    `60d%` = round((close - lag(rollapply(close, 60, mean, fill = NA, align = "right"))) / lag(rollapply(close, 60, mean, fill = NA, align = "right")), 4),
+    `90d%` = round((close - lag(rollapply(close, 90, mean, fill = NA, align = "right"))) / lag(rollapply(close, 90, mean, fill = NA, align = "right")), 4),
+    `180d%` = round((close - lag(rollapply(close, 180, mean, fill = NA, align = "right"))) / lag(rollapply(close, 180, mean, fill = NA, align = "right")), 4),
+    `365d%` = round((close - lag(rollapply(close, 365, mean, fill = NA, align = "right"))) / lag(rollapply(close, 365, mean, fill = NA, align = "right")), 4),
+    `All-time%` = round((close - first(close)) / first(close), 4)
+  ) %>%
+  na.fill(0)  # Replace NA values with 0
+
+# View the updated dataframe
+head(returns_crypto)
+```
+
+```{r}
+library(dplyr)
+
+# Convert 'returns_crypto' to a dataframe
+returns_crypto <- as.data.frame(returns_crypto)
+
+# Assuming 'returns_crypto' is now a dataframe
+alltime_returns <- returns_crypto %>%
+  group_by(ticker) %>%
+  summarise(latest_alltime = last(na.omit(`All-time%`)), .groups = "drop") %>%
+  na.fill(0)  # Replace NA values with 0 using na.fill from the zoo package
+
+# Print the 'alltime_returns' dataframe
+print(alltime_returns)
+
+```
+
+```{r echo=TRUE}
+library(dplyr)
+
+# Assuming df contains the prices of cryptocurrencies with columns: ticker, date, close
+
+# Calculate maximum drawdown for each cryptocurrency
+max_drawdowns <- df %>%
+  group_by(ticker) %>%
+  mutate(
+    peak = max(close),
+    trough = min(close[which.max(close):n()]),
+    max_drawdown = (peak - close) / peak
+  )
+
+```
+
+
+```{r}
+# Now calculate the maximum drawdown for each ticker
+drawdowns <- max_drawdowns %>%
+  group_by(ticker) %>%
+  summarise(
+    max_drawdown = mean(max_drawdown)  # Get the mean drawdown observed for each ticker as in crypto max would not be suitable
+  )
+
+```
+
+
+```{r eval=FALSE, include=FALSE}
+
+# Save returns_crypto dataframe as CSV
+write.csv(returns_crypto, file = "returns_crypto.csv", row.names = FALSE)# Save returns_crypto dataframe as CSV
+write.csv(max_drawdowns, file = "max_drawdowns.csv", row.names = FALSE)
+
+```
+

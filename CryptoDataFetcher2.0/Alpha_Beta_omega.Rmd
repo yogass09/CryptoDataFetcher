@@ -1,0 +1,214 @@
+---
+title: "Cryptocurrency Data Analysis"
+output: html_notebook
+---
+
+```{r setup}
+# Load necessary libraries
+library(readr)   # For reading CSV files
+library(xts)     # For time-series objects
+library(TTR)     # For financial calculations
+library(dplyr)   # For data manipulation
+library(tidyquant)  # For additional financial calculations
+```
+```{r}
+# Load your crypto data from a CSV file
+crypto_data <- read_csv("~/GitHub/CryptoDashboardPitch/Data FIles/CryptoMasterFile.csv")
+print(head(crypto_data))
+str(crypto_data)
+
+# Perform a sanity check on the date
+print(summary(crypto_data$date))
+
+# Filter out rows with dates before January 1, 2020
+crypto_data <- crypto_data %>%
+  mutate(date = as.Date(date)) %>%
+  filter(date > as.Date("2022-05-31"))
+
+# Rename 'symbol' to 'ticker' and drop 'open' column
+crypto_data <- crypto_data %>%
+  rename(ticker = symbol) %>%
+  select(-open)
+
+```
+```{r}
+# Select relevant columns and aggregate data to monthly intervals
+crypto_data <- crypto_data %>%
+  select(date, ticker, close, ret) %>%
+  group_by(ticker, date = format(date, "%Y-%m")) %>%
+  summarize(close = last(close), ret = sum(ret), .groups = 'drop')
+
+print(head(crypto_data))
+str(crypto_data)
+
+```
+
+```{r}
+
+crypto_data <- crypto_data %>%
+  group_by(ticker) %>%
+  mutate(log_return = round(log(close / lag(close)), 4)) %>%
+  ungroup()
+
+# Calculate daily logarithmic returns for Bitcoin
+market_returns <- crypto_data %>%
+  group_by(ticker) %>%
+  mutate(log_return = if_else(ticker == "BTC", round(log(close / lag(close)), 4), NA_real_)) %>%
+  ungroup()
+
+# Use Bitcoin's log returns as the market return for all entries
+market_returns <- filter(crypto_data, ticker == "BTC") %>%
+  select(date, market_ret = log_return)
+```
+
+
+```{r}
+# Join this market return to your main dataset
+crypto_data <- left_join(crypto_data, market_returns, by = "date")
+
+# Check for missing market returns
+missing_market_returns <- filter(crypto_data, is.na(market_ret))
+
+```
+```{r}
+# Count missing market returns
+na_count_market_ret <- crypto_data %>%
+  summarize(missing_count = sum(is.na(market_ret)))
+
+# Print the count of NA values in market returns
+print(na_count_market_ret)
+
+# Filter out rows with NA market returns
+crypto_data <- filter(crypto_data, !is.na(market_ret))
+
+# Now drop all rows with any NA values across the entire dataset
+crypto_data <- na.omit(crypto_data)
+
+# Optional: Print the structure and head of the cleaned data to confirm all NAs are removed
+print(head(crypto_data))
+str(crypto_data)
+
+# Count the total rows after cleaning
+total_rows_after_cleaning <- nrow(crypto_data)
+print(paste("Total rows after removing all NAs:", total_rows_after_cleaning))
+
+
+```
+```{r}
+# Remove any rows with NA values to ensure accurate calculations
+crypto_data <- na.omit(crypto_data)
+
+# Initialize a data frame to store results before the loop
+results <- data.frame(ticker = character(), Beta = numeric(), stringsAsFactors = FALSE)
+
+# Calculate beta for each ticker
+tickers <- unique(crypto_data$ticker)
+
+for (ticker in tickers) {
+  # Subset data for the current ticker
+  data_subset <- crypto_data[crypto_data$ticker == ticker,]
+  
+  # Calculate covariance between log_return and market_ret
+  covar <- cov(data_subset$log_return, data_subset$market_ret)
+  
+  # Calculate the variance of the market_ret
+  var_market <- var(data_subset$market_ret)
+  
+  # Compute beta
+  beta <-round((covar / var_market),4) 
+  
+  # Append to the results data frame
+  results <- rbind(results, data.frame(ticker = ticker, Beta = beta))
+}
+
+# Print the results
+print(results)
+```
+```{r}
+# Save the dataframe to a CSV file
+write.csv(results, "beta_crypto.csv", row.names = FALSE)
+```
+```{r}
+# Merge the beta values back into your main dataset
+crypto_data <- left_join(crypto_data, results, by = "ticker")
+
+# Calculate alpha for each cryptocurrency and round to 4 decimal places
+crypto_data <- crypto_data %>%
+  mutate(alpha = round(log_return - (Beta * market_ret), 4))
+
+
+# Review the head of the dataset to see the new alpha column
+print(head(crypto_data))
+```
+
+```{r}
+# Save the dataframe to a CSV file
+write.csv(results, "beta_crypto.csv", row.names = FALSE)
+```
+
+
+```{r}
+# Optional: summarize average alpha by ticker
+average_alpha_by_ticker <- crypto_data %>%
+  group_by(ticker) %>%
+  summarize(average_alpha = mean(alpha, na.rm = TRUE))
+
+# Print the average alpha by ticker
+print(average_alpha_by_ticker)
+
+```
+```{r}
+# Set the threshold for Omega calculation
+threshold <- 0.02
+
+# Add the excess_return column for Omega calculation
+crypto_data <- crypto_data %>%
+  mutate(excess_return = log_return - threshold)
+
+# Now calculate the Omega ratio for each ticker
+omega_by_ticker <- crypto_data %>%
+  group_by(ticker) %>%
+  summarise(
+    sum_positive_excess = sum(excess_return[excess_return > 0], na.rm = TRUE),
+    sum_negative_excess = sum(abs(excess_return[excess_return < 0]), na.rm = TRUE),
+    omega_ratio = round(sum_positive_excess / sum_negative_excess, 4)
+  )
+
+# Print the Omega ratio by ticker
+print(omega_by_ticker)
+```
+
+
+```{r}
+# Convert all matrices or other objects to data frames
+results <- as.data.frame(results)
+average_alpha_by_ticker <- as.data.frame(average_alpha_by_ticker)
+omega_by_ticker <- as.data.frame(omega_by_ticker)
+sortino_ratio_df <- as.data.frame(sortino_ratio_df)
+sharpe_ratios <- as.data.frame(sharpe_ratios)
+alltime_returns <- as.data.frame(alltime_returns)
+
+# Assuming you have dataframes 'results', 'average_alpha_by_ticker', 'omega_by_ticker', 'sortino_ratio', 'sharpe_ratios', and 'drawdowns'
+
+# Merge all results: alpha, beta, omega, Sortino ratio, Sharpe ratio, and Maximum Drawdown into a single dataframe
+final_results <- results %>%
+  left_join(average_alpha_by_ticker, by = "ticker") %>%
+  left_join(omega_by_ticker, by = "ticker") %>%
+  left_join(sortino_ratio_df, by = "ticker") %>%
+  left_join(sharpe_ratios, by = "ticker") %>%
+  left_join(drawdowns, by = "ticker") %>%
+  left_join(alltime_returns, by = "ticker") %>%
+  select(ticker, Beta, average_alpha, omega_ratio, sortino_ratio, sharpe_ratio, max_drawdown,latest_alltime)  # Ensure to reference the column name for maximum drawdown correctly
+
+# Print the final dataframe
+print(final_results)
+
+# Optionally, save the final dataframe to a CSV file
+write.csv(final_results, "crypto_performance_metrics_ratio.csv", row.names = FALSE)
+
+```
+
+
+
+
+

@@ -1,0 +1,65 @@
+---
+title: "Untitled"
+author: "yogesh sahu"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r}
+
+#library(readr)
+#CryptoMasterFile <- read_csv("~/GitHub/CryptoDashboardPitch/Data FIles/CryptoMasterFile.csv")
+#View(CryptoMasterFile)
+
+
+library(dplyr)
+
+
+df <- as.data.frame(df)
+library(dplyr)
+
+# Assuming your data frame 'df' has a 'date' column in a recognizable date format
+# Ensure 'date' is in the correct Date format
+df$date <- as.Date(df$date, format = "%d/%m/%Y")
+
+# Filter out rows where the date is on or before December 31, 2015
+df <- df %>%
+  filter(date > as.Date("2015-12-31"))
+
+head(df)
+df <- df %>%
+  group_by(ticker) %>%
+  mutate(
+    `1d%` = round((close - lag(close)) / lag(close), 4)
+  )
+```
+
+
+
+
+```{r}
+library(dplyr)
+
+# Assuming 'returns_crypto' is a data frame and contains a column '1d%' for daily returns
+# Also assuming you have a risk-free rate defined; it's often very low, like 0.02 or 0.03% daily for simplification
+
+risk_free_rate <- 0.003  # This represents a risk-free rate, adjust as per current rates, per day if '1d%' are daily returns
+
+# Calculate Sharpe Ratio
+sharpe_ratios <- df %>%
+  group_by(ticker) %>%
+  summarise(
+    average_return = mean(`1d%`, na.rm = TRUE),
+    sd_return = sd(`1d%`, na.rm = TRUE),
+    sharpe_ratio =  (average_return - risk_free_rate) / sd_return
+  ) %>%
+  ungroup()
+
+# View the results
+head(sharpe_ratios)
+
+```
+```{r}
+write.csv(sharpe_ratios, file = "sharpe_ratio.csv", row.names = FALSE)
+```
+
