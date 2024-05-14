@@ -4,3 +4,6 @@
 .Ruserdata
 /DATA
 CryptoDataFetcher2.0/crypto_performance_metrics_ratio.csv
+CryptoDataFetcher2.0/R/crypto_hist.csv
+CryptoDataFetcher2.0/crypto_hist.csv
+*.csv

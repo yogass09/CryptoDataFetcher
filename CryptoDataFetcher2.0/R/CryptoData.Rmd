@@ -44,24 +44,20 @@ message(paste("The CSV file has been created at:", output_file_path))
 ```{r}
 crypto_hist <- crypto_history(coin_list = coin_list_1000,
                               convert = "USD", # change to USD or other currency if desired
-                              limit = NULL,
+                              limit = 1000,
                               sleep = 1)
 ```
-```{r}
-# Select Date and Time from Dataset & ignore the rest
-crypto_hist <- select(crypto_hist,timestamp, close)
 
-# Rename columns to "ds" and "y" in order to use Prophet library
-crypto_hist <- rename(crypto_hist, ds = timestamp, y = close)
-
-```
 ```{r}
-# Calculate percentage change in closing price
-crypto_hist <- crypto_hist %>%
-  mutate(pct_change = (close - lag(close)) / lag(close) * 100)
+# Check the structure to confirm new order
+print(head(crypto_hist))
 ```
 
+
+
+
 ```{r}
+
 # Load necessary libraries
 library(dplyr)
 library(lubridate)
@@ -93,6 +89,41 @@ crypto_hist <- crypto_hist %>%
 print(head(crypto_hist))
 
 ```
+
+```{r}
+
+# Drop the specified columns
+crypto_hist <- crypto_hist %>%
+  select(
+    -timestamp,
+    -time_high,
+    -time_low,
+    -time_open,
+    -time_close,
+    -timestamp,
+    -time_close,
+    -high,
+    -low,
+    -name,
+    -slug,
+    -ref_cur,
+    -volume
+  )
+
+symbols_to_remove <- c("BabyDoge", "BIFI", "BRISE", "CTK", "KISHU", "PIT", "QUACK", "SHPING")
+library(dplyr)
+
+# Assuming your dataframe is named crypto_hist and the symbol column is named 'symbol'
+crypto_hist <- crypto_hist %>%
+  filter(!symbol %in% symbols_to_remove)
+
+```
+
+```{r}
+# Write the filtered data to a CSV file
+write.csv(crypto_hist, "crypto_hist.csv", row.names = FALSE)
+```
+
 ```{r}
 # Load necessary libraries
 library(dplyr)
@@ -224,7 +255,7 @@ if (!dir.exists(output_dir)) {
   message("All data processed and saved for each cryptocurrency id.")
   
 
-}else {
+else {
   message("'id' column not found in the dataset.")
 }
 
