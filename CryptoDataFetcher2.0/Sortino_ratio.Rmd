@@ -4,9 +4,7 @@ output: html_notebook
 ---
 
 ```{r}
-library(dplyr)
 
-df <- as.data.frame(df)
 library(dplyr)
 
 # Assuming your data frame 'df' has a 'date' column in a recognizable date format
@@ -21,22 +19,22 @@ df <- df %>%
 crypto_df <- df %>%
   group_by(ticker) %>%
   mutate(
-    `1d%` = round((close - lag(close)) / lag(close), 4)
+    ret = round((close - lag(close)) / lag(close), 4)
   )
 na.omit(crypto_df)
 ```
 
 ```{r eval=FALSE, include=FALSE}
 # Define the risk-free rate
-rf <- 0.01  # Assuming 1% as risk-free rate
+rf <- 0.0001  # Assuming 1% as risk-free rate
 
 # Group by ticker and calculate Sortino Ratio
 crypto_df <- crypto_df %>%
   group_by(ticker) %>%
   mutate(
-    downside_returns = ifelse(`1d%` < 0, `1d%`, NA),  # Extract downside returns
+    downside_returns = ifelse(ret < 0, ret, NA),  # Extract downside returns
     downside_deviation = sd(downside_returns, na.rm = TRUE),  # Calculate downside deviation
-    sortino_ratio = (mean(`1d%`, na.rm = TRUE) - rf) / downside_deviation  # Calculate Sortino Ratio
+    sortino_ratio = (mean(ret, na.rm = TRUE) - rf) / downside_deviation  # Calculate Sortino Ratio
   ) %>%
   ungroup()
 
@@ -54,9 +52,9 @@ rf <- 0.01  # Assuming 1% as risk-free rate
 sortino_ratio_df <- crypto_df %>%
   group_by(ticker) %>%
   summarise(
-    downside_returns = mean(ifelse(`1d%` < 0, `1d%`, NA), na.rm = TRUE),  # Average of downside returns
-    average_return = mean(`1d%`, na.rm = TRUE),  # Average of all daily returns
-    downside_deviation = sd(ifelse(`1d%` < 0, `1d%`, NA), na.rm = TRUE),  # Standard deviation of downside returns
+    downside_returns = mean(ifelse(ret < 0, ret, NA), na.rm = TRUE),  # Average of downside returns
+    average_return = mean(ret, na.rm = TRUE),  # Average of all daily returns
+    downside_deviation = sd(ifelse(ret < 0, ret, NA), na.rm = TRUE),  # Standard deviation of downside returns
     sortino_ratio = round((average_return - rf) / (downside_deviation + 1e-10), 2)  # Calculation of Sortino Ratio rounded to 4 decimals
   ) %>%
   select(ticker, sortino_ratio) %>%

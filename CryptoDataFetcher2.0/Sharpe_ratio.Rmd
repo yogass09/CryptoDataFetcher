@@ -6,16 +6,15 @@ output: pdf_document
 ---
 
 ```{r}
-
-#library(readr)
-#CryptoMasterFile <- read_csv("~/GitHub/CryptoDashboardPitch/Data FIles/CryptoMasterFile.csv")
+library(dplyr)
+library(readr)
+CryptoMasterFile <- read_csv("returns_crypto.csv")
 #View(CryptoMasterFile)
 
 
-library(dplyr)
+df<-CryptoMasterFile
+#df<- df%>% rename (ticker=symbol)
 
-
-df <- as.data.frame(df)
 library(dplyr)
 
 # Assuming your data frame 'df' has a 'date' column in a recognizable date format
@@ -40,26 +39,32 @@ df <- df %>%
 ```{r}
 library(dplyr)
 
-# Assuming 'returns_crypto' is a data frame and contains a column '1d%' for daily returns
-# Also assuming you have a risk-free rate defined; it's often very low, like 0.02 or 0.03% daily for simplification
+# Assuming 'df' is your data frame and '1d%' is the column with daily returns
+# Define the daily risk-free rate
+risk_free_rate <- 0.02  # Adjust as per the current daily rate
 
-risk_free_rate <- 0.003  # This represents a risk-free rate, adjust as per current rates, per day if '1d%' are daily returns
-
-# Calculate Sharpe Ratio
+# Calculate Sharpe Ratios
 sharpe_ratios <- df %>%
   group_by(ticker) %>%
   summarise(
-    average_return = mean(`1d%`, na.rm = TRUE),
-    sd_return = sd(`1d%`, na.rm = TRUE),
-    sharpe_ratio =  (average_return - risk_free_rate) / sd_return
+    average_return =round( mean(`1d%`, na.rm = TRUE),4),  # Calculate average daily return
+    sd_return = round(sd(`1d%`, na.rm = TRUE),4),         # Calculate standard deviation of daily returns
+    sharpe_ratio = round((average_return - risk_free_rate) / sd_return, 4)  # Calculate and round Sharpe Ratio to 4 decimal places
   ) %>%
   ungroup()
 
 # View the results
 head(sharpe_ratios)
 
+
 ```
+
+
+
 ```{r}
 write.csv(sharpe_ratios, file = "sharpe_ratio.csv", row.names = FALSE)
+```
+```{r}
+
 ```
 

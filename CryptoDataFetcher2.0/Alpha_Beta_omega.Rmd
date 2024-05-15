@@ -11,6 +11,7 @@ library(TTR)     # For financial calculations
 library(dplyr)   # For data manipulation
 library(tidyquant)  # For additional financial calculations
 ```
+
 ```{r}
 # Load your crypto data from a CSV file
 crypto_data <- read_csv("~/GitHub/CryptoDashboardPitch/Data FIles/CryptoMasterFile.csv")
