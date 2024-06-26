@@ -25,7 +25,7 @@ coin_list_all <- crypto_list(only_active = TRUE)
 ```
 
 ```{r}
-coin_list_1000 <- head(coin_list_all[order(coin_list_all$rank), ], 1000)
+coin_list_1000 <- head(coin_list_all[order(coin_list_all$rank), ], 10116)
 
 ```
 

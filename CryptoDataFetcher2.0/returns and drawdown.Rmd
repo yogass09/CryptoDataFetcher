@@ -17,7 +17,18 @@ df<-CryptoMasterFile
 #head(returns_crypto)
 
 returns_crypto<-df
+
+
+# Ensure the data is ordered properly
+returns_crypto_modellinginpowerbi <- df %>% select(ticker, date,close )
 ```
+
+
+```{r}
+# Save returns_crypto dataframe as CSV
+write.csv(returns_crypto_modellinginpowerbi, file = "returns_crypto_forpbi.csv", row.names = FALSE)# Save returns_crypto dataframe as CSV
+```
+
 ```{r echo=TRUE}
 library(dplyr)
 library(zoo)

@@ -1,0 +1,32 @@
+---
+title: "DATA TO DB"
+author: "yogesh sahu"
+date: "`r Sys.Date()`"
+output: word_document
+---
+
+```{r Library, include=FALSE}
+library(prophet)
+library(tidyverse)
+library(crypto2)
+```
+
+
+```{r}
+# Get Data from CoinMarketCap
+coin_list_all <- crypto_list(only_active = TRUE)
+```
+
+
+```{r}
+# Function to fetch cryptocurrency historical data with a specified date range
+crypto_hist <- crypto_history(coin_list = coin_list_all,
+                              convert = "USD", # change to USD or other currency if desired
+                              limit = 1,
+                              sleep = 0,
+                              interval = "1h",
+                              start_date = "2024-06-26",  # specify the start date
+                              end_date = "2024-06-26")    # specify the end date
+# View the fetched data
+print(crypto_hist)
+```
