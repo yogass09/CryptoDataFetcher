@@ -4,29 +4,85 @@ author: "yogesh sahu"
 date: "`r Sys.Date()`"
 output: word_document
 ---
+```{r}
+install.packages ("crypto2")
+```
+# libraries
 
 ```{r Library, include=FALSE}
 library(prophet)
 library(tidyverse)
 library(crypto2)
+library (dplyr)
 ```
 
-
+# list of coins 
 ```{r}
 # Get Data from CoinMarketCap
 coin_list_all <- crypto_list(only_active = TRUE)
 ```
 
-
+# Base Script To have base data 
 ```{r}
 # Function to fetch cryptocurrency historical data with a specified date range
-crypto_hist <- crypto_history(coin_list = coin_list_all,
+hourly_crypto_OHLCV <- crypto_history(coin_list = coin_list_all,
                               convert = "USD", # change to USD or other currency if desired
                               limit = 1,
                               sleep = 0,
                               interval = "1h",
-                              start_date = "2024-06-26",  # specify the start date
-                              end_date = "2024-06-26")    # specify the end date
-# View the fetched data
-print(crypto_hist)
+                              start_date = Sys.Date()-5,  # specify the start date
+                                end_date ="2024-06-28")    # specify the end date
 ```
+# Run this EveryHour
+
+```{r} 
+# Function to fetch cryptocurrency historical data with a specified date range
+hourly_crypto_OHLCV_today <- crypto_history(coin_list = coin_list_all,
+                              convert = "USD", # change to USD or other currency if desired
+                              limit = 2,
+                              sleep = 0,
+                              interval = "1h",
+                              start_date = Sys.Date()-1,  # specify the start date
+                                end_date ="2024-06-28")    # specify the end date
+
+# part 2 
+# Append new_data to crypto_hist
+crypto_hist <- rbind(hourly_crypto_OHLCV, hourly_crypto_OHLCV_today)
+
+
+# part 3
+# Convert 'timestamp' to Date format if it's not already in Date format
+crypto_hist$timestamp <- as.Date(crypto_hist$timestamp)
+
+# Calculate the threshold date (4 days ago)
+threshold_date <- Sys.Date() - 4
+
+# Filter rows where timestamp is not older than 4 days
+crypto_hist <- crypto_hist[crypto_hist$timestamp >= threshold_date, ]
+```
+
+
+```{r}
+library(DBI)
+library(odbc)
+```
+
+```{r}
+
+# Set up your Azure SQL Database connection
+con <- dbConnect(odbc::odbc(),
+                 Driver = "ODBC Driver 17 for SQL Server",
+                 Server = "cp-io-sql.database.windows.net",
+                 Database = "sql_db_ohlcv",
+                 UID = "yogass09",
+                 PWD = "Qwerty@312",
+                 Port = 1433)
+
+# Write data to the SQL database
+dbWriteTable(con, "crypto_hist", crypto_hist, overwrite = TRUE)
+
+# Disconnect from the database
+dbDisconnect(con)
+
+```
+
