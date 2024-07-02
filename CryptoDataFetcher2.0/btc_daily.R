@@ -2,13 +2,28 @@
 
 start_time <- Sys.time()
 
-# get data
+# get data full
 
 btc_daily<-crypto_history(coin_list = coin_list_all,
                              convert = "USD", # change to USD or other currency if desired
                              limit = 1,
                              sleep = 0)
-# who dat 
+
+# Full BTC OHLCV data
+
+
+#btc_daily<-crypto_history(coin_list = coin_list_all,
+#                          convert = "USD", # change to USD or other currency if desired
+#                          limit = 1,
+#                          sleep = 0, start_date = Sys.Date()-10)
+
+
+# Daily Refresh for BTC
+
+btc_daily<-crypto_history(coin_list = coin_list_all,
+                          convert = "USD", # change to USD or other currency if desired
+                          limit = 1,
+                          sleep = 0, start_date = Sys.Date()-10)
 
 library(DBI)
 library(odbc)
@@ -26,7 +41,7 @@ con <- dbConnect(odbc::odbc(),
 
 # Write data to the SQL database
 
-dbWriteTable(con, "btc_daily", btc_daily, overwrite = TRUE)
+dbWriteTable(con, "btc_daily", btc_daily, append = TRUE)
 
 # Disconnect from the database
 
